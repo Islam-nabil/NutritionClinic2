@@ -63,6 +63,16 @@ namespace NutritionClinic1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_patient {
+            get {
+                object obj = ResourceManager.GetObject("bg patient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deadline {
             get {
                 object obj = ResourceManager.GetObject("deadline", resourceCulture);
@@ -133,6 +143,16 @@ namespace NutritionClinic1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout {
+            get {
+                object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loupe {
             get {
                 object obj = ResourceManager.GetObject("loupe", resourceCulture);
@@ -146,6 +166,36 @@ namespace NutritionClinic1.Properties {
         internal static System.Drawing.Bitmap medical_history {
             get {
                 object obj = ResourceManager.GetObject("medical-history", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NicePng_sherawali_png_3605155 {
+            get {
+                object obj = ResourceManager.GetObject("NicePng_sherawali-png_3605155", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NicePng_sherawali_png_36051551 {
+            get {
+                object obj = ResourceManager.GetObject("NicePng_sherawali-png_36051551", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NicePng_sherawali_png_36051552 {
+            get {
+                object obj = ResourceManager.GetObject("NicePng_sherawali-png_36051552", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +266,26 @@ namespace NutritionClinic1.Properties {
         internal static System.Drawing.Bitmap report {
             get {
                 object obj = ResourceManager.GetObject("report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap return_button_png_34573 {
+            get {
+                object obj = ResourceManager.GetObject("return-button-png-34573", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap return_button_png_345731 {
+            get {
+                object obj = ResourceManager.GetObject("return-button-png-345731", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
