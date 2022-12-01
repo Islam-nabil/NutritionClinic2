@@ -162,6 +162,7 @@
             this.label1.Size = new System.Drawing.Size(247, 25);
             this.label1.TabIndex = 49;
             this.label1.Text = "Your InBody Report:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form8
             // 
