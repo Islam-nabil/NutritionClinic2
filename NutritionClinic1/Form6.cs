@@ -16,5 +16,12 @@ namespace NutritionClinic1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 Back_1 = new Form5();
+            Back_1.Show();
+            Visible = false;
+        }
     }
 }

@@ -19,7 +19,50 @@ namespace NutritionClinic1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Form7 requ = new Form7();
+            requ.Show();
+            Visible = false;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form6 diet = new Form6();
+            diet.Show();
+            Visible= false;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form9 Emr = new Form9();
+            Emr.Show();
+            Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form8 Inbody = new Form8();
+            Inbody.Show();
+            Visible = false;
         }
     }
 }

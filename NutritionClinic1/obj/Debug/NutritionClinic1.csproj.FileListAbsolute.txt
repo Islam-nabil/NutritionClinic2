@@ -60,3 +60,4 @@ C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form6.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form7.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form8.resources
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form9.resources

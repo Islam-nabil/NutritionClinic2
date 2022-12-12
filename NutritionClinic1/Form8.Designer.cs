@@ -49,7 +49,7 @@
             this.label44.AutoSize = true;
             this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(103, 436);
+            this.label44.Location = new System.Drawing.Point(1275, 455);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(43, 17);
             this.label44.TabIndex = 52;
@@ -59,12 +59,13 @@
             // 
             this.button1.BackgroundImage = global::NutritionClinic1.Properties.Resources.return_button_png_345731;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(95, 366);
+            this.button1.Location = new System.Drawing.Point(82, 370);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 50);
             this.button1.TabIndex = 51;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 

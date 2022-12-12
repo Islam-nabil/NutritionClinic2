@@ -985,6 +985,7 @@
             this.btnprevious.Size = new System.Drawing.Size(75, 59);
             this.btnprevious.TabIndex = 49;
             this.btnprevious.UseVisualStyleBackColor = true;
+            this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
             // 
             // btnnext
             // 
