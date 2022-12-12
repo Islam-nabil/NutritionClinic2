@@ -102,5 +102,18 @@ namespace NutritionClinic1
         {
 
         }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            Form1 Back_6 = new Form1();
+            Back_6.Show();
+            Visible = false;
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            UC_Per uc = new UC_Per();
+            addUserControl(uc);
+        }
     }
 }
