@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="myclinic1ModelStoreContainer" CdmEntityContainer="myclinic1Entities">
+    <EntitySetMapping Name="Drugs">
+      <EntityTypeMapping TypeName="myclinic1Model.Drug">
+        <MappingFragment StoreEntitySet="Drugs">
+          <ScalarProperty Name="Drug_ID" ColumnName="Drug_ID" />
+          <ScalarProperty Name="Drug_Name" ColumnName="Drug_Name" />
+          <ScalarProperty Name="Drug_Dose" ColumnName="Drug_Dose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

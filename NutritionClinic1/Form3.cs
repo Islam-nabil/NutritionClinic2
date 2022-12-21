@@ -62,6 +62,7 @@ namespace NutritionClinic1
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -72,7 +73,8 @@ namespace NutritionClinic1
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            // TODO: This line of code loads data into the 'myclinic1DataSet1.Drugs' table. You can move, or remove it, as needed.
+            this.drugsTableAdapter.Fill(this.myclinic1DataSet1.Drugs);
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -114,6 +116,12 @@ namespace NutritionClinic1
         {
             UC_Per uc = new UC_Per();
             addUserControl(uc);
+            this.drugsTableAdapter.Fill(this.myclinic1DataSet1.Drugs);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

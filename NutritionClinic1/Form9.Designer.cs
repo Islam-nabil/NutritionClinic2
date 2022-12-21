@@ -126,7 +126,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(296, 534);
+            this.label17.Location = new System.Drawing.Point(292, 534);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(423, 19);
             this.label17.TabIndex = 140;
@@ -511,6 +511,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(313, 20);
             this.textBox1.TabIndex = 103;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -578,7 +579,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(824, 612);
+            this.ClientSize = new System.Drawing.Size(878, 653);
             this.Controls.Add(this.btnprevious);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
