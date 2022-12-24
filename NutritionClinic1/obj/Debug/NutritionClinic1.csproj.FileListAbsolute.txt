@@ -64,3 +64,5 @@ C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\EntityFramework.xml
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form10.resources
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.DocView.resources

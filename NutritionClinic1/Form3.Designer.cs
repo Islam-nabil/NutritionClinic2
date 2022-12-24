@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.drugsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.myclinic1DataSet1 = new NutritionClinic1.myclinic1DataSet1();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -47,22 +50,21 @@
             this.myclinic1DataSet = new NutritionClinic1.myclinic1DataSet();
             this.myclinic1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.myclinic1DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.myclinic1DataSet1 = new NutritionClinic1.myclinic1DataSet1();
-            this.drugsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.drugsTableAdapter = new NutritionClinic1.myclinic1DataSet1TableAdapters.DrugsTableAdapter();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelcontainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.guna2Button6);
             this.panel1.Controls.Add(this.guna2Button5);
             this.panel1.Controls.Add(this.guna2Button4);
@@ -74,8 +76,31 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 699);
+            this.panel1.Size = new System.Drawing.Size(230, 736);
             this.panel1.TabIndex = 17;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.drugsBindingSource, "Drug_Name", true));
+            this.comboBox2.DataSource = this.drugsBindingSource;
+            this.comboBox2.DisplayMember = "Drug_Name";
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(62, 148);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 19;
+            this.comboBox2.ValueMember = "Drug_Name";
+            // 
+            // drugsBindingSource
+            // 
+            this.drugsBindingSource.DataMember = "Drugs";
+            this.drugsBindingSource.DataSource = this.myclinic1DataSet1;
+            // 
+            // myclinic1DataSet1
+            // 
+            this.myclinic1DataSet1.DataSetName = "myclinic1DataSet1";
+            this.myclinic1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // guna2Button6
             // 
@@ -234,15 +259,15 @@
             this.panelcontainer.Controls.Add(this.button7);
             this.panelcontainer.Controls.Add(this.button6);
             this.panelcontainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelcontainer.Location = new System.Drawing.Point(226, 0);
+            this.panelcontainer.Location = new System.Drawing.Point(230, 0);
             this.panelcontainer.Name = "panelcontainer";
-            this.panelcontainer.Size = new System.Drawing.Size(847, 699);
+            this.panelcontainer.Size = new System.Drawing.Size(911, 736);
             this.panelcontainer.TabIndex = 18;
             this.panelcontainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(635, 1);
+            this.button8.Location = new System.Drawing.Point(847, 0);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(34, 23);
             this.button8.TabIndex = 19;
@@ -253,7 +278,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(595, 3);
+            this.button7.Location = new System.Drawing.Point(820, 3);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(34, 23);
             this.button7.TabIndex = 18;
@@ -262,7 +287,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(675, 0);
+            this.button6.Location = new System.Drawing.Point(877, 1);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(34, 23);
             this.button6.TabIndex = 17;
@@ -291,16 +316,6 @@
             this.myclinic1DataSetBindingSource1.DataSource = this.myclinic1DataSet;
             this.myclinic1DataSetBindingSource1.Position = 0;
             // 
-            // myclinic1DataSet1
-            // 
-            this.myclinic1DataSet1.DataSetName = "myclinic1DataSet1";
-            this.myclinic1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // drugsBindingSource
-            // 
-            this.drugsBindingSource.DataMember = "Drugs";
-            this.drugsBindingSource.DataSource = this.myclinic1DataSet1;
-            // 
             // drugsTableAdapter
             // 
             this.drugsTableAdapter.ClearBeforeFill = true;
@@ -309,7 +324,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 699);
+            this.ClientSize = new System.Drawing.Size(1141, 736);
             this.Controls.Add(this.panelcontainer);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -318,13 +333,13 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelcontainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,5 +365,6 @@
         private myclinic1DataSet1 myclinic1DataSet1;
         private System.Windows.Forms.BindingSource drugsBindingSource;
         private myclinic1DataSet1TableAdapters.DrugsTableAdapter drugsTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

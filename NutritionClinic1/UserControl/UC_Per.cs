@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -39,7 +41,7 @@ namespace NutritionClinic1
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            /* string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
+             string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
 
              using (SqlConnection sqlcon = new SqlConnection(conStr))
              {
@@ -47,7 +49,7 @@ namespace NutritionClinic1
                  DataTable dataTable = new DataTable();
                  sqldataadapter.Fill(dataTable);
                  dataGridView1.DataSource = dataTable;
-             }*/
+             }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -57,6 +59,7 @@ namespace NutritionClinic1
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+           
 
         }
 
@@ -67,20 +70,15 @@ namespace NutritionClinic1
 
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        
+
+       
+
+        private void comboBox2_SelectedIndexChanged_4(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBox2_SelectedIndexChanged_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged_3(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

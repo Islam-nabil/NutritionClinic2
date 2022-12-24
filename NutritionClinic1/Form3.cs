@@ -2,21 +2,29 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace NutritionClinic1
 {
     public partial class Form3 : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Trusted_Connection=True;");
+
         public Form3()
         {
             InitializeComponent();
-            UC_MedicalR uc = new UC_MedicalR();
-            addUserControl(uc);
+            panelcontainer.Controls.Clear();
+            DocView frm11 = new DocView();
+            frm11.TopLevel = false;
+            panelcontainer.Controls.Add(frm11);
+            frm11.Show();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -51,8 +59,11 @@ namespace NutritionClinic1
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            UC_MedicalR uc = new UC_MedicalR();
-            addUserControl(uc);
+            panelcontainer.Controls.Clear();
+            DocView frm11 = new DocView();
+            frm11.TopLevel = false  ;
+            panelcontainer.Controls.Add(frm11);
+            frm11.Show();
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
@@ -73,8 +84,7 @@ namespace NutritionClinic1
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            // TODO: This line of code loads data into the 'myclinic1DataSet1.Drugs' table. You can move, or remove it, as needed.
-            this.drugsTableAdapter.Fill(this.myclinic1DataSet1.Drugs);
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -114,12 +124,22 @@ namespace NutritionClinic1
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            UC_Per uc = new UC_Per();
-            addUserControl(uc);
-            this.drugsTableAdapter.Fill(this.myclinic1DataSet1.Drugs);
+            panelcontainer.Controls.Clear();
+            Form10 frm10 = new Form10();
+            frm10.TopLevel = false;
+            panelcontainer.Controls.Add(frm10);
+            frm10.Show();
+
+            
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_Per1_Load(object sender, EventArgs e)
         {
 
         }

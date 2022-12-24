@@ -61,11 +61,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocView.Designer.cs">
+      <DependentUpon>DocView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -125,6 +137,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>myclinic1DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="myclinic1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myclinic1DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RUButton.cs">
@@ -182,8 +199,14 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl\UC_View.Designer.cs" />
+    <EmbeddedResource Include="DocView.resx">
+      <DependentUpon>DocView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -265,6 +288,17 @@
     </None>
     <None Include="myclinic1DataSet1.xss">
       <DependentUpon>myclinic1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myclinic1DataSet2.xsc">
+      <DependentUpon>myclinic1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="myclinic1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myclinic1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myclinic1DataSet2.xss">
+      <DependentUpon>myclinic1DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

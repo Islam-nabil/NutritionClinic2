@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label drug_NameLabel;
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,16 +41,16 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.drugsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.myclinic1DataSet = new NutritionClinic1.myclinic1DataSet();
-            this.rjButton1 = new NutritionClinic1.RJButton();
             this.drugsTableAdapter = new NutritionClinic1.myclinic1DataSetTableAdapters.DrugsTableAdapter();
             this.myclinic1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tableAdapterManager = new NutritionClinic1.myclinic1DataSetTableAdapters.TableAdapterManager();
+            this.rjButton1 = new NutritionClinic1.RJButton();
+            this.drug_NameComboBox = new System.Windows.Forms.ComboBox();
+            drug_NameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet)).BeginInit();
@@ -179,16 +180,6 @@
             this.radioButton3.Text = "Monthly";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(519, 190);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 18);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Drug to use:";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -201,20 +192,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(707, 124);
+            this.label7.Location = new System.Drawing.Point(654, 136);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 13);
             this.label7.TabIndex = 16;
             this.label7.Text = "Drug Name";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(815, 175);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Drug ID";
             // 
             // drugsBindingSource
             // 
@@ -226,6 +208,21 @@
             // 
             this.myclinic1DataSet.DataSetName = "myclinic1DataSet";
             this.myclinic1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // drugsTableAdapter
+            // 
+            this.drugsTableAdapter.ClearBeforeFill = true;
+            // 
+            // myclinic1DataSetBindingSource
+            // 
+            this.myclinic1DataSetBindingSource.DataSource = this.myclinic1DataSet;
+            this.myclinic1DataSetBindingSource.Position = 0;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.DrugsTableAdapter = this.drugsTableAdapter;
+            this.tableAdapterManager.UpdateOrder = NutritionClinic1.myclinic1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // rjButton1
             // 
@@ -247,37 +244,37 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
-            // drugsTableAdapter
+            // drug_NameLabel
             // 
-            this.drugsTableAdapter.ClearBeforeFill = true;
+            drug_NameLabel.AutoSize = true;
+            drug_NameLabel.Location = new System.Drawing.Point(89, 200);
+            drug_NameLabel.Name = "drug_NameLabel";
+            drug_NameLabel.Size = new System.Drawing.Size(64, 13);
+            drug_NameLabel.TabIndex = 40;
+            drug_NameLabel.Text = "Drug Name:";
             // 
-            // myclinic1DataSetBindingSource
+            // drug_NameComboBox
             // 
-            this.myclinic1DataSetBindingSource.DataSource = this.myclinic1DataSet;
-            this.myclinic1DataSetBindingSource.Position = 0;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.drugsBindingSource;
-            this.comboBox2.DisplayMember = "Drug_Name";
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(638, 167);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 21;
+            this.drug_NameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.drugsBindingSource, "Drug_Name", true));
+            this.drug_NameComboBox.DataSource = this.drugsBindingSource;
+            this.drug_NameComboBox.DisplayMember = "Drug_Name";
+            this.drug_NameComboBox.FormattingEnabled = true;
+            this.drug_NameComboBox.Location = new System.Drawing.Point(159, 197);
+            this.drug_NameComboBox.Name = "drug_NameComboBox";
+            this.drug_NameComboBox.Size = new System.Drawing.Size(121, 21);
+            this.drug_NameComboBox.TabIndex = 41;
+            this.drug_NameComboBox.ValueMember = "Drug_Name";
             // 
             // UC_Per
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(drug_NameLabel);
+            this.Controls.Add(this.drug_NameComboBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.rjButton1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -314,16 +311,15 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Label label6;
         private RJButton rjButton1;
         private System.Windows.Forms.DataGridView dataGridView1;
         
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.BindingSource drugsBindingSource;
         private myclinic1DataSet myclinic1DataSet;
         public myclinic1DataSetTableAdapters.DrugsTableAdapter drugsTableAdapter;
         private System.Windows.Forms.BindingSource myclinic1DataSetBindingSource;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private myclinic1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.ComboBox drug_NameComboBox;
     }
 }
