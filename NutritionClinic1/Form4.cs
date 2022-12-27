@@ -15,8 +15,11 @@ namespace NutritionClinic1
         public Form4()
         {
             InitializeComponent();
-            UC_Addresrev uc = new UC_Addresrev();
-            addUserControl(uc);
+            panelContainer.Controls.Clear();
+            NurseTab frm13 = new NurseTab();
+            frm13.TopLevel = false;
+            panelContainer.Controls.Add(frm13);
+            frm13.Show();
 
         }
         private void addUserControl(UserControl userControl)
@@ -48,8 +51,11 @@ namespace NutritionClinic1
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            UC_Addpatinet uc = new UC_Addpatinet();
-            addUserControl(uc);
+            panelContainer.Controls.Clear();
+            NurseTab frm13 = new NurseTab();
+            frm13.TopLevel = false;
+            panelContainer.Controls.Add(frm13);
+            frm13.Show();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

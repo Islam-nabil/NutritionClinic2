@@ -73,13 +73,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(859, 674);
             this.panel1.TabIndex = 35;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
-            this.label8.Location = new System.Drawing.Point(10, 2);
+            this.label8.Location = new System.Drawing.Point(16, 14);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(169, 30);
             this.label8.TabIndex = 33;
@@ -253,7 +254,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
-            this.label2.Location = new System.Drawing.Point(145, 269);
+            this.label2.Location = new System.Drawing.Point(145, 255);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 17;
@@ -271,13 +272,13 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Full Name";
             // 
-            // UC_Addresrv
+            // UC_Addpatinet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.Controls.Add(this.panel1);
-            this.Name = "UC_Addresrv";
+            this.Name = "UC_Addpatinet";
             this.Size = new System.Drawing.Size(859, 674);
             this.Load += new System.EventHandler(this.UC_Addresrv_Load);
             this.panel1.ResumeLayout(false);

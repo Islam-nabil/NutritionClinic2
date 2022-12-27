@@ -66,16 +66,22 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.m = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.n = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnprevious = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.radioButton15 = new System.Windows.Forms.RadioButton();
+            this.radioButton16 = new System.Windows.Forms.RadioButton();
+            this.label19 = new System.Windows.Forms.Label();
+            this.rjButton3 = new NutritionClinic1.RJButton();
             this.SuspendLayout();
             // 
             // checkBox4
@@ -484,12 +490,12 @@
             this.label6.TabIndex = 107;
             this.label6.Text = "Any chronic disease:";
             // 
-            // textBox5
+            // m
             // 
-            this.textBox5.Location = new System.Drawing.Point(380, 108);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(146, 20);
-            this.textBox5.TabIndex = 106;
+            this.m.Location = new System.Drawing.Point(380, 108);
+            this.m.Name = "m";
+            this.m.Size = new System.Drawing.Size(146, 20);
+            this.m.TabIndex = 106;
             // 
             // textBox4
             // 
@@ -505,13 +511,13 @@
             this.textBox3.Size = new System.Drawing.Size(45, 20);
             this.textBox3.TabIndex = 104;
             // 
-            // textBox1
+            // n
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 20);
-            this.textBox1.TabIndex = 103;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.n.Location = new System.Drawing.Point(118, 60);
+            this.n.Name = "n";
+            this.n.Size = new System.Drawing.Size(313, 20);
+            this.n.TabIndex = 103;
+            this.n.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -574,12 +580,98 @@
             this.btnprevious.UseVisualStyleBackColor = true;
             this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
             // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(491, 74);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(246, 27);
+            this.textBox9.TabIndex = 147;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.label18.Location = new System.Drawing.Point(517, 9);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(108, 20);
+            this.label18.TabIndex = 146;
+            this.label18.Text = "National ID";
+            // 
+            // radioButton15
+            // 
+            this.radioButton15.AutoSize = true;
+            this.radioButton15.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton15.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.radioButton15.Location = new System.Drawing.Point(763, 191);
+            this.radioButton15.Name = "radioButton15";
+            this.radioButton15.Size = new System.Drawing.Size(88, 24);
+            this.radioButton15.TabIndex = 150;
+            this.radioButton15.TabStop = true;
+            this.radioButton15.Text = "Female";
+            this.radioButton15.UseVisualStyleBackColor = false;
+            // 
+            // radioButton16
+            // 
+            this.radioButton16.AutoSize = true;
+            this.radioButton16.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton16.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.radioButton16.Location = new System.Drawing.Point(651, 191);
+            this.radioButton16.Name = "radioButton16";
+            this.radioButton16.Size = new System.Drawing.Size(68, 24);
+            this.radioButton16.TabIndex = 149;
+            this.radioButton16.TabStop = true;
+            this.radioButton16.Text = "Male";
+            this.radioButton16.UseVisualStyleBackColor = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.label19.Location = new System.Drawing.Point(658, 145);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(69, 20);
+            this.label19.TabIndex = 148;
+            this.label19.Text = "Gender";
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.IndianRed;
+            this.rjButton3.BackgroundColor = System.Drawing.Color.IndianRed;
+            this.rjButton3.BorderColor = System.Drawing.Color.Pink;
+            this.rjButton3.BorderRadius = 20;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.Location = new System.Drawing.Point(745, 335);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(87, 36);
+            this.rjButton3.TabIndex = 151;
+            this.rjButton3.Text = "Save";
+            this.rjButton3.TextColor = System.Drawing.Color.Black;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(878, 653);
+            this.Controls.Add(this.rjButton3);
+            this.Controls.Add(this.radioButton15);
+            this.Controls.Add(this.radioButton16);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.btnprevious);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
@@ -619,10 +711,10 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.m);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.n);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -677,15 +769,21 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox m;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox n;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnprevious;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.RadioButton radioButton15;
+        private System.Windows.Forms.RadioButton radioButton16;
+        private System.Windows.Forms.Label label19;
+        private RJButton rjButton3;
     }
 }

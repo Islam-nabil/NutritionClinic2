@@ -46,11 +46,9 @@ C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.csproj.CopyComplete
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.exe
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.pdb
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_MedicalR.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Diet.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Appo.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Inbody.resources
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Per.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UserControl.UC_View.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_ViewAp.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Addresrev.resources
@@ -66,3 +64,5 @@ C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form10.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.DocView.resources
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.DocView2.resources
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.NurseTab.resources

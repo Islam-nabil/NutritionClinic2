@@ -89,8 +89,11 @@ namespace NutritionClinic1
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            UC_Diet uc = new UC_Diet();
-            addUserControl(uc);
+            panelcontainer.Controls.Clear();
+            DocView2 frm12 = new DocView2();
+            frm12.TopLevel = false;
+            panelcontainer.Controls.Add(frm12);
+            frm12.Show();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
