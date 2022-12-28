@@ -31,7 +31,7 @@ namespace NutritionClinic1
             {
                 comboBox1.Items.Clear();
                 con.Open();
-                String id = "SELECT Patinet_ID FROM Patinet ORDER BY Patinet_ID";
+                String id = "SELECT Patient_ID FROM Patient ORDER BY Patient_ID";
                 da = new SqlDataAdapter(id,con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -39,7 +39,7 @@ namespace NutritionClinic1
 
                 foreach(DataRow dr in dt.Rows)
                 {
-                    comboBox1.Items.Add(dr["Patinet_ID"]);
+                    comboBox1.Items.Add(dr["Patient_ID"]);
                 }
             }
             catch(Exception ex)
@@ -52,7 +52,30 @@ namespace NutritionClinic1
             textBox2.Clear();
             textBox4.Clear();
             textBox8.Clear();
-            textBox7.Clear();
+
+            try
+            {
+                comboBox4.Items.Clear();
+                con.Open();
+                String id = "SELECT Patient_ID FROM Patient ORDER BY Patient_ID";
+                da = new SqlDataAdapter(id, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                con.Close();
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    comboBox4.Items.Add(dr["Patient_ID"]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+            comboBox4.ResetText();
+            textBox6.Clear();
+
+
 
         }
 
@@ -582,7 +605,7 @@ namespace NutritionClinic1
             {
                 String si = comboBox1.SelectedItem.ToString();
                 con.Open();
-                String query = "SELECT * FROM Patinet WHERE Patinet_ID = '" + si + "'";
+                String query = "SELECT * FROM Patient WHERE Patient_ID = '" + si + "'";
                 cmd = new SqlCommand(query, con);
                 SqlDataReader R = cmd.ExecuteReader();
 
@@ -594,7 +617,9 @@ namespace NutritionClinic1
                     dateTimePicker1.Text = R.GetValue(4).ToString();
                     textBox4.Text = R.GetValue(7).ToString();
                     textBox8.Text = R.GetValue(6).ToString();
-                    textBox7.Text = R.GetValue(8).ToString();
+                    
+                    
+                    
 
 
                 }
@@ -605,5 +630,159 @@ namespace NutritionClinic1
                 MessageBox.Show("Error" + ex);
             }
         }
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox11_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        /*private void rjButton1_Click_1(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
+            
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT Patient_Name, Patient_Chronic1,Patient_Chronic2,Patient_Chronic3 FROM Patient ORDER BY Patient_ID");
+                cmd.Parameters.AddWithValue("Patient_ID", textBox7.Text);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    textBox6.Text = dr.GetValue(1).ToString();
+                    if (dr["Patient_Chronic1"].ToString() == "Heart Disease")
+                    {
+                        checkBox16.Checked = true;
+                    }
+                    else
+                    {
+                        checkBox16.Checked= false;
+                    }
+                }
+                dr.Close();
+                con.Close();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }*/
+
+
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string f, d, p;
+            f = "Heart diseases";
+            d = "High Blood Pressure";
+            p = "Diabetes";
+            try
+            {
+                String si = comboBox4.SelectedItem.ToString();
+                con.Open();
+                String query = "SELECT * FROM Patient WHERE Patient_ID = '" + si + "'";
+                cmd = new SqlCommand(query, con);
+                SqlDataReader R = cmd.ExecuteReader();
+
+                while (R.Read())
+                {
+                    textBox6.Text = R.GetValue(1).ToString();
+                    if (f.Equals(R.GetValue(8).ToString()))
+                    {
+                        checkBox16.Checked = true;
+                    }
+                    else
+                    {
+                        checkBox16.Checked = false;
+                    }
+                    if (d.Equals(R.GetValue(9).ToString()))
+                    {
+                        checkBox13.Checked = true;
+                    }
+                    else
+                    {
+                        checkBox13.Checked = false;
+                    }
+                    if (p.Equals(R.GetValue(10).ToString()))
+                    {
+                        checkBox11.Checked = true;
+                    }
+                    else
+                    {
+                        checkBox11.Checked = false;
+                    }
+                    textBox5.Text = R.GetValue(11).ToString();
+
+
+
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+        }
+
+
+
+        /*private void rjButton1_Click_1(object sender, EventArgs e)
+        {
+            checkBox16.Checked = false;
+            checkBox13.Checked = false;
+            checkBox11.Checked = false;
+
+            //SqlCommand cmd= new SqlCommand(query, con);
+            //SqlDataReader dr = cmd.ExecuteReader();
+            con.Open();
+            
+            SqlCommand query = new SqlCommand( "SELECT * FROM Patient WHERE Patient_ID = '" + comboBox2 + "'");
+            
+            SqlDataReader dr = query.ExecuteReader();
+            if (dr.Read())
+            {
+                string aa = dr["Patient_Chronic1"].ToString();
+                string[] a = aa.Split(' ');
+                foreach (Control cc in this.Controls)
+                {
+                    if (cc is CheckBox)
+                    {
+                        CheckBox b = (CheckBox)cc;
+                        for (int j = 0; j < a.Length; j++)
+                        {
+                            if (a[j].ToString() == b.Text)
+                            {
+                                b.Checked = true;
+                            }
+                        }
+                    }
+                }
+            }
+            con.Close();
+        }*/
     }
 }

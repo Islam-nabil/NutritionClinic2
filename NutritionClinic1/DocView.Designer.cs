@@ -33,6 +33,17 @@
             this.myclinic1DataSet2 = new NutritionClinic1.myclinic1DataSet2();
             this.drugsTableAdapter = new NutritionClinic1.myclinic1DataSet2TableAdapters.DrugsTableAdapter();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.rjButton2 = new NutritionClinic1.RJButton();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.rjButton3 = new NutritionClinic1.RJButton();
             this.guna2RadioButton23 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton22 = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -65,17 +76,15 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -85,7 +94,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet2)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -112,6 +120,17 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Info;
+            this.tabPage2.Controls.Add(this.rjButton2);
+            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.comboBox4);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.checkBox11);
+            this.tabPage2.Controls.Add(this.checkBox13);
+            this.tabPage2.Controls.Add(this.checkBox16);
             this.tabPage2.Controls.Add(this.rjButton3);
             this.tabPage2.Controls.Add(this.guna2RadioButton23);
             this.tabPage2.Controls.Add(this.guna2RadioButton22);
@@ -144,7 +163,6 @@
             this.tabPage2.Controls.Add(this.checkBox1);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.checkedListBox1);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
@@ -152,6 +170,131 @@
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Medical Record";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.IndianRed;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.IndianRed;
+            this.rjButton2.BorderColor = System.Drawing.Color.Pink;
+            this.rjButton2.BorderRadius = 20;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.ForeColor = System.Drawing.Color.Black;
+            this.rjButton2.Location = new System.Drawing.Point(714, 112);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(87, 36);
+            this.rjButton2.TabIndex = 207;
+            this.rjButton2.Text = "View Ans";
+            this.rjButton2.TextColor = System.Drawing.Color.Black;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(447, 30);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(134, 20);
+            this.textBox6.TabIndex = 206;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(336, 32);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 19);
+            this.label12.TabIndex = 205;
+            this.label12.Text = "Full Name";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(109, 32);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 19);
+            this.label11.TabIndex = 204;
+            this.label11.Text = "ID";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(12, 14);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 19);
+            this.label10.TabIndex = 203;
+            this.label10.Text = "Search By:";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(151, 30);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 202;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(360, 128);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 18);
+            this.label8.TabIndex = 201;
+            this.label8.Text = "If Other, Please List";
+            this.label8.Click += new System.EventHandler(this.label8_Click_1);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Enabled = false;
+            this.textBox5.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(531, 125);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 23);
+            this.textBox5.TabIndex = 200;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged_1);
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoCheck = false;
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox11.Location = new System.Drawing.Point(531, 90);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(85, 22);
+            this.checkBox11.TabIndex = 199;
+            this.checkBox11.Text = "Diabetes";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoCheck = false;
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox13.Location = new System.Drawing.Point(323, 90);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(159, 22);
+            this.checkBox13.TabIndex = 198;
+            this.checkBox13.Text = "High Blood Pressure";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoCheck = false;
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox16.Location = new System.Drawing.Point(160, 90);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(121, 22);
+            this.checkBox16.TabIndex = 197;
+            this.checkBox16.Text = "Heart Disease";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
             // rjButton3
             // 
@@ -164,7 +307,7 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.Black;
-            this.rjButton3.Location = new System.Drawing.Point(691, 494);
+            this.rjButton3.Location = new System.Drawing.Point(688, 549);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(87, 36);
             this.rjButton3.TabIndex = 97;
@@ -182,7 +325,7 @@
             this.guna2RadioButton23.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton23.CheckedState.InnerOffset = -4;
             this.guna2RadioButton23.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton23.Location = new System.Drawing.Point(617, 470);
+            this.guna2RadioButton23.Location = new System.Drawing.Point(614, 525);
             this.guna2RadioButton23.Name = "guna2RadioButton23";
             this.guna2RadioButton23.Size = new System.Drawing.Size(41, 21);
             this.guna2RadioButton23.TabIndex = 96;
@@ -202,7 +345,7 @@
             this.guna2RadioButton22.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton22.CheckedState.InnerOffset = -4;
             this.guna2RadioButton22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton22.Location = new System.Drawing.Point(560, 470);
+            this.guna2RadioButton22.Location = new System.Drawing.Point(557, 525);
             this.guna2RadioButton22.Name = "guna2RadioButton22";
             this.guna2RadioButton22.Size = new System.Drawing.Size(44, 21);
             this.guna2RadioButton22.TabIndex = 95;
@@ -222,7 +365,7 @@
             this.guna2RadioButton19.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton19.CheckedState.InnerOffset = -4;
             this.guna2RadioButton19.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton19.Location = new System.Drawing.Point(497, 470);
+            this.guna2RadioButton19.Location = new System.Drawing.Point(494, 525);
             this.guna2RadioButton19.Name = "guna2RadioButton19";
             this.guna2RadioButton19.Size = new System.Drawing.Size(44, 21);
             this.guna2RadioButton19.TabIndex = 94;
@@ -242,7 +385,7 @@
             this.guna2RadioButton20.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton20.CheckedState.InnerOffset = -4;
             this.guna2RadioButton20.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton20.Location = new System.Drawing.Point(441, 469);
+            this.guna2RadioButton20.Location = new System.Drawing.Point(438, 524);
             this.guna2RadioButton20.Name = "guna2RadioButton20";
             this.guna2RadioButton20.Size = new System.Drawing.Size(44, 21);
             this.guna2RadioButton20.TabIndex = 93;
@@ -257,7 +400,7 @@
             // 
             this.checkBox12.AutoSize = true;
             this.checkBox12.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.Location = new System.Drawing.Point(560, 146);
+            this.checkBox12.Location = new System.Drawing.Point(557, 201);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(122, 23);
             this.checkBox12.TabIndex = 92;
@@ -269,7 +412,7 @@
             // 
             this.checkBox15.AutoSize = true;
             this.checkBox15.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox15.Location = new System.Drawing.Point(441, 145);
+            this.checkBox15.Location = new System.Drawing.Point(438, 200);
             this.checkBox15.Name = "checkBox15";
             this.checkBox15.Size = new System.Drawing.Size(113, 23);
             this.checkBox15.TabIndex = 91;
@@ -281,7 +424,7 @@
             // 
             this.checkBox14.AutoSize = true;
             this.checkBox14.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.Location = new System.Drawing.Point(316, 147);
+            this.checkBox14.Location = new System.Drawing.Point(313, 202);
             this.checkBox14.Name = "checkBox14";
             this.checkBox14.Size = new System.Drawing.Size(113, 23);
             this.checkBox14.TabIndex = 87;
@@ -298,7 +441,7 @@
             this.guna2RadioButton21.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton21.CheckedState.InnerOffset = -4;
             this.guna2RadioButton21.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton21.Location = new System.Drawing.Point(392, 267);
+            this.guna2RadioButton21.Location = new System.Drawing.Point(389, 322);
             this.guna2RadioButton21.Name = "guna2RadioButton21";
             this.guna2RadioButton21.Size = new System.Drawing.Size(43, 21);
             this.guna2RadioButton21.TabIndex = 86;
@@ -318,7 +461,7 @@
             this.guna2RadioButton18.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton18.CheckedState.InnerOffset = -4;
             this.guna2RadioButton18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton18.Location = new System.Drawing.Point(332, 266);
+            this.guna2RadioButton18.Location = new System.Drawing.Point(329, 321);
             this.guna2RadioButton18.Name = "guna2RadioButton18";
             this.guna2RadioButton18.Size = new System.Drawing.Size(46, 21);
             this.guna2RadioButton18.TabIndex = 83;
@@ -333,7 +476,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(11, 467);
+            this.label34.Location = new System.Drawing.Point(8, 522);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(418, 19);
             this.label34.TabIndex = 82;
@@ -344,7 +487,7 @@
             // 
             this.checkBox10.AutoSize = true;
             this.checkBox10.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.Location = new System.Drawing.Point(460, 430);
+            this.checkBox10.Location = new System.Drawing.Point(457, 485);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(82, 23);
             this.checkBox10.TabIndex = 81;
@@ -356,7 +499,7 @@
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.Location = new System.Drawing.Point(390, 430);
+            this.checkBox9.Location = new System.Drawing.Point(387, 485);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(64, 23);
             this.checkBox9.TabIndex = 80;
@@ -368,7 +511,7 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(296, 430);
+            this.checkBox5.Location = new System.Drawing.Point(293, 485);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(88, 23);
             this.checkBox5.TabIndex = 79;
@@ -380,7 +523,7 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(203, 430);
+            this.checkBox6.Location = new System.Drawing.Point(200, 485);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(60, 23);
             this.checkBox6.TabIndex = 78;
@@ -392,7 +535,7 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(122, 430);
+            this.checkBox7.Location = new System.Drawing.Point(119, 485);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(69, 23);
             this.checkBox7.TabIndex = 77;
@@ -404,7 +547,7 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(15, 430);
+            this.checkBox8.Location = new System.Drawing.Point(12, 485);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(73, 23);
             this.checkBox8.TabIndex = 76;
@@ -416,7 +559,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(11, 408);
+            this.label33.Location = new System.Drawing.Point(8, 463);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(347, 19);
             this.label33.TabIndex = 75;
@@ -435,7 +578,7 @@
             this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(265, 372);
+            this.guna2TextBox4.Location = new System.Drawing.Point(262, 427);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
@@ -456,7 +599,7 @@
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(95, 372);
+            this.guna2TextBox3.Location = new System.Drawing.Point(92, 427);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
@@ -469,7 +612,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(196, 369);
+            this.label32.Location = new System.Drawing.Point(193, 424);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(63, 19);
             this.label32.TabIndex = 72;
@@ -480,7 +623,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(36, 369);
+            this.label31.Location = new System.Drawing.Point(33, 424);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(53, 19);
             this.label31.TabIndex = 71;
@@ -491,7 +634,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(3, 350);
+            this.label30.Location = new System.Drawing.Point(0, 405);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(362, 19);
             this.label30.TabIndex = 70;
@@ -510,7 +653,7 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(234, 288);
+            this.guna2TextBox2.Location = new System.Drawing.Point(221, 349);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
@@ -523,7 +666,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(55, 294);
+            this.label29.Location = new System.Drawing.Point(52, 349);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(141, 19);
             this.label29.TabIndex = 68;
@@ -534,7 +677,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(11, 266);
+            this.label28.Location = new System.Drawing.Point(8, 321);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(313, 19);
             this.label28.TabIndex = 65;
@@ -545,7 +688,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(296, 227);
+            this.checkBox4.Location = new System.Drawing.Point(293, 282);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(82, 23);
             this.checkBox4.TabIndex = 55;
@@ -557,7 +700,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(203, 227);
+            this.checkBox3.Location = new System.Drawing.Point(200, 282);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(81, 23);
             this.checkBox3.TabIndex = 54;
@@ -569,7 +712,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(122, 227);
+            this.checkBox2.Location = new System.Drawing.Point(119, 282);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(75, 23);
             this.checkBox2.TabIndex = 53;
@@ -581,7 +724,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(15, 227);
+            this.checkBox1.Location = new System.Drawing.Point(12, 282);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(101, 23);
             this.checkBox1.TabIndex = 52;
@@ -593,7 +736,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(11, 191);
+            this.label17.Location = new System.Drawing.Point(8, 246);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(423, 19);
             this.label17.TabIndex = 51;
@@ -604,33 +747,18 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(11, 147);
+            this.label14.Location = new System.Drawing.Point(8, 202);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(305, 19);
             this.label14.TabIndex = 39;
             this.label14.Text = "If female, last time you were pregnant?";
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Heart Disease",
-            "High blood pressure",
-            "Diabetes",
-            "If other, please list:"});
-            this.checkedListBox1.Location = new System.Drawing.Point(152, 15);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(429, 104);
-            this.checkedListBox1.TabIndex = 37;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 15);
+            this.label7.Location = new System.Drawing.Point(8, 90);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(135, 19);
             this.label7.TabIndex = 36;
@@ -643,13 +771,11 @@
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.textBox8);
-            this.tabPage1.Controls.Add(this.textBox7);
             this.tabPage1.Controls.Add(this.textBox4);
             this.tabPage1.Controls.Add(this.textBox3);
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.guna2PictureBox1);
@@ -665,6 +791,15 @@
             this.tabPage1.Text = "Patient data";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(125, 29);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 33;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -673,15 +808,6 @@
             this.textBox8.Size = new System.Drawing.Size(69, 26);
             this.textBox8.TabIndex = 31;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(112, 253);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(43, 26);
-            this.textBox7.TabIndex = 30;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox4
             // 
@@ -729,17 +855,6 @@
             this.label9.TabIndex = 32;
             this.label9.Text = "ID";
             this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 256);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 20);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "Blood Type";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label5
             // 
@@ -863,15 +978,6 @@
             this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalBottom;
             this.guna2TabControl1.SelectedIndexChanged += new System.EventHandler(this.guna2TabControl1_SelectedIndexChanged);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(125, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 33;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // DocView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -921,7 +1027,6 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.CheckBox checkBox4;
@@ -930,17 +1035,14 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
@@ -951,5 +1053,17 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private RJButton rjButton2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }

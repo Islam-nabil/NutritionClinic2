@@ -18,9 +18,12 @@ namespace NutritionClinic1
         SqlConnection con = new SqlConnection(@"Data Source = DESKTOP - TPC7M5O; Initial Catalog = myclinic1; Integrated Security = True");
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd = new SqlCommand();
-        string g;
-        string checkbox;
-       
+        string g;       
+        string n = "";
+        string n2 = "";
+        string n3 = "";
+
+
         public NurseTab()
         {
             InitializeComponent();
@@ -36,22 +39,7 @@ namespace NutritionClinic1
 
             
         {
-            checkbox = "";
-            for(int x = 0; x < checkedListBox2.Items.Count; x++)
-            {
-                if (checkedListBox2.SelectedItems == checkedListBox2.Items[x])
-                {
-                    if(checkbox == "")
-                    {
-                        checkbox = checkedListBox2.Items[x].ToString();
-                    }
-                    else
-                    {
-                        checkbox +=","+ checkedListBox2.Items[x].ToString();
-                    }
-                }
-            }
-
+           
 
 
             if(radioButtonM.Checked==true)
@@ -62,11 +50,29 @@ namespace NutritionClinic1
             {
                 g = "Female";
             }
+            
+            if (checkBox1.Checked == true)
+            {
+                n = "Heart diseases";
+            }
+            if (checkBox2.Checked == true)
+            {
+                n2 = "High Blood Pressure";
+            }
+            if (checkBox3.Checked == true)
+            {
+                n3 = "Diabetes";
+            }
+
 
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Patinet(Patinet_Name,Patinet_Gender,Patinet_Birth,Patinet_NationalID,Patinet_Address,Patinet_Height,Patinet_Weight,Patinet_Bloodtype,Patinet_Chronic)values('"+TextboxNa.Text+"','"+g+"','"+ dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "' ,'"+Nationalid.Text+"','"+Address.Text+"','"+HeightN.Text+"','"+Weightn.Text+"','"+Bloodn+"','"+checkbox+"')",con);;
+            SqlCommand cmd = new SqlCommand("insert into Patient(Patient_Name,Patient_Gender,Patient_Birth,Patient_NationalID,Patient_Address,Patient_Height,Patient_Weight, Patient_Chronic1, Patient_Chronic2,Patient_Chronic3,Patient_Chronic4)values('"+ TextboxNa.Text+"','"+g+"','"+ dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "' ,'"+Nationalid.Text+"','"+Address.Text+"','"+HeightN.Text+"','"+Weightn.Text+ "' , '" +n+ "','" +n2+ "','" +n3+ "','"+textBox3.Text+"')", con);
+            //SqlCommand cnd = new SqlCommand("insert into Patient(Patient_Chronic1,Patient_Chronic2,Patient_Chronic3,Patient_Chronic4)values('" + n + "','" + n2 + "','" + n3 + "','" + textBox3.Text + "')", con);
+            
+
             int i = cmd.ExecuteNonQuery();
+            //cnd.ExecuteNonQuery();
             if (i != 0) 
             {
                 MessageBox.Show("Saved");
