@@ -156,6 +156,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoutedEventArgs.cs" />
     <Compile Include="RUButton.cs">
       <SubType>Component</SubType>
     </Compile>

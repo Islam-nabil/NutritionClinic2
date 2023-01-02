@@ -38,10 +38,8 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,7 +55,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 736);
+            this.panel1.Size = new System.Drawing.Size(212, 748);
             this.panel1.TabIndex = 1;
             // 
             // guna2Button5
@@ -153,7 +151,6 @@
             // guna2Button1
             // 
             this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.Checked = true;
             this.guna2Button1.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(112)))), ((int)(((byte)(0)))));
             this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(112)))), ((int)(((byte)(0)))));
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -177,6 +174,7 @@
             // guna2Button2
             // 
             this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.Checked = true;
             this.guna2Button2.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(112)))), ((int)(((byte)(0)))));
             this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(112)))), ((int)(((byte)(0)))));
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -200,26 +198,18 @@
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.SystemColors.Info;
-            this.panelContainer.Controls.Add(this.button1);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(212, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(700, 736);
+            this.panelContainer.Size = new System.Drawing.Size(783, 748);
             this.panelContainer.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(734, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 45);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(911, 736);
+            this.ClientSize = new System.Drawing.Size(995, 748);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -228,7 +218,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -243,7 +232,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Panel panelContainer;
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }

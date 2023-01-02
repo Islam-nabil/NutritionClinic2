@@ -22,6 +22,11 @@ namespace NutritionClinic1
         string n = "";
         string n2 = "";
         string n3 = "";
+        string m;
+        string p;
+        string f;
+        string s;
+        
 
 
         public NurseTab()
@@ -39,8 +44,44 @@ namespace NutritionClinic1
 
             
         {
-           
+            
 
+            if (radioButton5.Checked == true)
+            {
+                f = textBox1.Text;
+            }
+            else
+            {
+                f = radioButton12.Text;
+            }
+
+
+           
+            if(radioButton1.Checked==true)
+            {
+                p = radioButton1.Text;
+            }
+             else if (radioButton2.Checked == true)
+            {
+                p = radioButton2.Text;
+            }
+             else if (radioButton3.Checked == true)
+            {
+                p = radioButton3.Text;
+            }
+            else
+            {
+                p = radioButton4.Text;
+            }
+
+            if (radioButton6.Checked == true)
+            {
+                m = textBox6.Text;
+            }
+            else
+            {
+                m = radioButton20.Text;
+            }
 
             if(radioButtonM.Checked==true)
             {
@@ -50,6 +91,8 @@ namespace NutritionClinic1
             {
                 g = "Female";
             }
+
+
             
             if (checkBox1.Checked == true)
             {
@@ -63,27 +106,34 @@ namespace NutritionClinic1
             {
                 n3 = "Diabetes";
             }
-
-
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Patient(Patient_Name,Patient_Gender,Patient_Birth,Patient_NationalID,Patient_Address,Patient_Height,Patient_Weight, Patient_Chronic1, Patient_Chronic2,Patient_Chronic3,Patient_Chronic4)values('"+ TextboxNa.Text+"','"+g+"','"+ dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "' ,'"+Nationalid.Text+"','"+Address.Text+"','"+HeightN.Text+"','"+Weightn.Text+ "' , '" +n+ "','" +n2+ "','" +n3+ "','"+textBox3.Text+"')", con);
-            //SqlCommand cnd = new SqlCommand("insert into Patient(Patient_Chronic1,Patient_Chronic2,Patient_Chronic3,Patient_Chronic4)values('" + n + "','" + n2 + "','" + n3 + "','" + textBox3.Text + "')", con);
-            
-
-            int i = cmd.ExecuteNonQuery();
-            //cnd.ExecuteNonQuery();
-            if (i != 0) 
+            if (radioButton13.Checked == true)
             {
-                MessageBox.Show("Saved");
-
+                s = radioButton13.Text;
             }
             else
             {
-                MessageBox.Show("error");
+                s = radioButton14.Text;
             }
-            con.Close();
-        }
+
+
+                SqlConnection con = new SqlConnection("Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
+                con.Open();
+                SqlCommand cmd = new SqlCommand("insert into Patient(Patient_Name,Patient_Gender,Patient_Birth,Patient_NationalID,Patient_Address,Patient_Height,Patient_Weight, Patient_Chronic1, Patient_Chronic2,Patient_Chronic3,Patient_Chronic4,Patient_Med,Patient_pregnant,Supplements,Smoker,Foodallergies)values('" + TextboxNa.Text + "','" + g + "','" + dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "' ,'" + Nationalid.Text + "','" + Address.Text + "','" + HeightN.Text + "','" + Weightn.Text + "' , '" + n + "','" + n2 + "','" + n3 + "', '" + textBox3.Text + "' ,'" + m + "','" + p + "','" + textBox2.Text + "','" + s + "','" + f + "')", con);
+
+
+                int i = cmd.ExecuteNonQuery();
+                //cnd.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    MessageBox.Show("Saved");
+
+                }
+                else
+                {
+                    MessageBox.Show("error");
+                }
+                con.Close();
+            }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -120,6 +170,28 @@ namespace NutritionClinic1
 
         private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Environment.Exit(0);
 
         }
     }

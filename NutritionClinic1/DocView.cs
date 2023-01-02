@@ -696,10 +696,13 @@ namespace NutritionClinic1
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string f, d, p;
+            string f, d, p , m;
             f = "Heart diseases";
             d = "High Blood Pressure";
             p = "Diabetes";
+            
+
+
             try
             {
                 String si = comboBox4.SelectedItem.ToString();
@@ -711,6 +714,7 @@ namespace NutritionClinic1
                 while (R.Read())
                 {
                     textBox6.Text = R.GetValue(1).ToString();
+                    textBox9.Text=R.GetValue(14).ToString();
                     if (f.Equals(R.GetValue(8).ToString()))
                     {
                         checkBox16.Checked = true;
@@ -737,6 +741,62 @@ namespace NutritionClinic1
                     }
                     textBox5.Text = R.GetValue(11).ToString();
 
+                    if (radioButton7.Text.Equals( R.GetValue(12)))
+                    {
+                        radioButton7.Checked = true;
+                        textBox7.Clear();
+
+                    }
+                    else
+                    {
+                        radioButton7.Checked = false;
+                        radioButton6.Checked = true;
+                        textBox7.Text = R.GetValue(12).ToString();
+
+                    }
+
+                    if(radioButton1.Text.Equals(R.GetValue(13)))
+                    {
+                        radioButton1.Checked = true;
+                    }
+                    else if(radioButton2.Text.Equals(R.GetValue(13)))
+                    {
+                     radioButton2.Checked = true;
+                    }
+                    else if(radioButton3.Text.Equals(R.GetValue(13)))
+                    {
+                        radioButton3.Checked= true;
+
+                    }
+                    else
+                    {
+                        radioButton4.Checked= true;
+                    }
+
+                    if (radioButton13.Text.Equals(R.GetValue(15)))
+                    {
+                        radioButton13.Checked= true;
+                        radioButton14.Checked = false;
+                    }
+                    else
+                    {
+                       radioButton14.Checked= true;
+                        radioButton13.Checked = false;
+                    }
+
+                    if (radioButton12.Text.Equals(R.GetValue(16)))
+                    {
+                        radioButton12.Checked = true;
+
+                    }
+                    else
+                    {
+                        radioButton12.Checked = false;
+                        radioButton5.Checked = true;
+                        textBox10.Text = R.GetValue(16).ToString();
+
+                    }
+
 
 
                 }
@@ -746,6 +806,116 @@ namespace NutritionClinic1
             {
                 MessageBox.Show("Error" + ex);
             }
+        }
+
+        private void label13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton14_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton13_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label26_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
 
