@@ -52,15 +52,6 @@
             this.rjButton1 = new NutritionClinic1.RJButton();
             this.label20 = new System.Windows.Forms.Label();
             this.guna2ComboBox6 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2RadioButton13 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton14 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton15 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton10 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton11 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton12 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton7 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton8 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton9 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton4 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton5 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton6 = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -68,14 +59,8 @@
             this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2ComboBox5 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -383,15 +368,6 @@
             this.tabPage1.Controls.Add(this.rjButton1);
             this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.guna2ComboBox6);
-            this.tabPage1.Controls.Add(this.guna2RadioButton13);
-            this.tabPage1.Controls.Add(this.guna2RadioButton14);
-            this.tabPage1.Controls.Add(this.guna2RadioButton15);
-            this.tabPage1.Controls.Add(this.guna2RadioButton10);
-            this.tabPage1.Controls.Add(this.guna2RadioButton11);
-            this.tabPage1.Controls.Add(this.guna2RadioButton12);
-            this.tabPage1.Controls.Add(this.guna2RadioButton7);
-            this.tabPage1.Controls.Add(this.guna2RadioButton8);
-            this.tabPage1.Controls.Add(this.guna2RadioButton9);
             this.tabPage1.Controls.Add(this.guna2RadioButton4);
             this.tabPage1.Controls.Add(this.guna2RadioButton5);
             this.tabPage1.Controls.Add(this.guna2RadioButton6);
@@ -399,14 +375,8 @@
             this.tabPage1.Controls.Add(this.guna2RadioButton2);
             this.tabPage1.Controls.Add(this.guna2RadioButton1);
             this.tabPage1.Controls.Add(this.label19);
-            this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.guna2ComboBox5);
-            this.tabPage1.Controls.Add(this.guna2ComboBox4);
-            this.tabPage1.Controls.Add(this.guna2ComboBox3);
-            this.tabPage1.Controls.Add(this.guna2ComboBox2);
             this.tabPage1.Controls.Add(this.guna2ComboBox1);
             this.tabPage1.Controls.Add(this.label21);
             this.tabPage1.Controls.Add(this.textBox9);
@@ -439,6 +409,7 @@
             this.rjButton1.Text = "Save";
             this.rjButton1.TextColor = System.Drawing.Color.Black;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
             // 
             // label20
             // 
@@ -464,177 +435,6 @@
             this.guna2ComboBox6.Name = "guna2ComboBox6";
             this.guna2ComboBox6.Size = new System.Drawing.Size(106, 36);
             this.guna2ComboBox6.TabIndex = 122;
-            // 
-            // guna2RadioButton13
-            // 
-            this.guna2RadioButton13.AutoSize = true;
-            this.guna2RadioButton13.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton13.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton13.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton13.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton13.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton13.Location = new System.Drawing.Point(551, 355);
-            this.guna2RadioButton13.Name = "guna2RadioButton13";
-            this.guna2RadioButton13.Size = new System.Drawing.Size(129, 21);
-            this.guna2RadioButton13.TabIndex = 121;
-            this.guna2RadioButton13.Text = "Daily before food";
-            this.guna2RadioButton13.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton13.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton13.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton13.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton14
-            // 
-            this.guna2RadioButton14.AutoSize = true;
-            this.guna2RadioButton14.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton14.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton14.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton14.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton14.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton14.Location = new System.Drawing.Point(411, 355);
-            this.guna2RadioButton14.Name = "guna2RadioButton14";
-            this.guna2RadioButton14.Size = new System.Drawing.Size(125, 21);
-            this.guna2RadioButton14.TabIndex = 120;
-            this.guna2RadioButton14.Text = "Daily before bed";
-            this.guna2RadioButton14.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton14.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton14.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton14.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton15
-            // 
-            this.guna2RadioButton15.AutoSize = true;
-            this.guna2RadioButton15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton15.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton15.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton15.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton15.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton15.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.guna2RadioButton15.Location = new System.Drawing.Point(282, 355);
-            this.guna2RadioButton15.Name = "guna2RadioButton15";
-            this.guna2RadioButton15.Size = new System.Drawing.Size(123, 21);
-            this.guna2RadioButton15.TabIndex = 119;
-            this.guna2RadioButton15.Text = "Daily After lunch";
-            this.guna2RadioButton15.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton15.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton15.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton15.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton10
-            // 
-            this.guna2RadioButton10.AutoSize = true;
-            this.guna2RadioButton10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton10.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton10.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton10.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton10.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton10.Location = new System.Drawing.Point(551, 287);
-            this.guna2RadioButton10.Name = "guna2RadioButton10";
-            this.guna2RadioButton10.Size = new System.Drawing.Size(129, 21);
-            this.guna2RadioButton10.TabIndex = 118;
-            this.guna2RadioButton10.Text = "Daily before food";
-            this.guna2RadioButton10.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton10.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton10.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton10.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton11
-            // 
-            this.guna2RadioButton11.AutoSize = true;
-            this.guna2RadioButton11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton11.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton11.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton11.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton11.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton11.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton11.Location = new System.Drawing.Point(411, 287);
-            this.guna2RadioButton11.Name = "guna2RadioButton11";
-            this.guna2RadioButton11.Size = new System.Drawing.Size(125, 21);
-            this.guna2RadioButton11.TabIndex = 117;
-            this.guna2RadioButton11.Text = "Daily before bed";
-            this.guna2RadioButton11.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton11.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton11.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton11.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton12
-            // 
-            this.guna2RadioButton12.AutoSize = true;
-            this.guna2RadioButton12.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton12.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton12.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton12.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton12.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton12.Location = new System.Drawing.Point(282, 287);
-            this.guna2RadioButton12.Name = "guna2RadioButton12";
-            this.guna2RadioButton12.Size = new System.Drawing.Size(123, 21);
-            this.guna2RadioButton12.TabIndex = 116;
-            this.guna2RadioButton12.Text = "Daily After lunch";
-            this.guna2RadioButton12.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton12.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton12.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton12.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton7
-            // 
-            this.guna2RadioButton7.AutoSize = true;
-            this.guna2RadioButton7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton7.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton7.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton7.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton7.Location = new System.Drawing.Point(551, 224);
-            this.guna2RadioButton7.Name = "guna2RadioButton7";
-            this.guna2RadioButton7.Size = new System.Drawing.Size(129, 21);
-            this.guna2RadioButton7.TabIndex = 115;
-            this.guna2RadioButton7.Text = "Daily before food";
-            this.guna2RadioButton7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton7.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton7.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton7.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton8
-            // 
-            this.guna2RadioButton8.AutoSize = true;
-            this.guna2RadioButton8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton8.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton8.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton8.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton8.Location = new System.Drawing.Point(411, 224);
-            this.guna2RadioButton8.Name = "guna2RadioButton8";
-            this.guna2RadioButton8.Size = new System.Drawing.Size(125, 21);
-            this.guna2RadioButton8.TabIndex = 114;
-            this.guna2RadioButton8.Text = "Daily before bed";
-            this.guna2RadioButton8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton8.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton8.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton8.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton9
-            // 
-            this.guna2RadioButton9.AutoSize = true;
-            this.guna2RadioButton9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton9.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton9.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton9.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton9.Location = new System.Drawing.Point(282, 224);
-            this.guna2RadioButton9.Name = "guna2RadioButton9";
-            this.guna2RadioButton9.Size = new System.Drawing.Size(123, 21);
-            this.guna2RadioButton9.TabIndex = 113;
-            this.guna2RadioButton9.Text = "Daily After lunch";
-            this.guna2RadioButton9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton9.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton9.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton9.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // guna2RadioButton4
             // 
@@ -760,36 +560,6 @@
             this.label19.TabIndex = 106;
             this.label19.Text = "Medications";
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(24, 221);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(100, 20);
-            this.label18.TabIndex = 105;
-            this.label18.Text = "Medications";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(24, 284);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 20);
-            this.label16.TabIndex = 104;
-            this.label16.Text = "Medications";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(24, 352);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 20);
-            this.label15.TabIndex = 103;
-            this.label15.Text = "Medications";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -816,57 +586,6 @@
             this.guna2ComboBox5.Size = new System.Drawing.Size(133, 36);
             this.guna2ComboBox5.TabIndex = 101;
             this.guna2ComboBox5.ValueMember = "Drug_Name";
-            // 
-            // guna2ComboBox4
-            // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.DisplayMember = "Drug_Name";
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(143, 221);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.Size = new System.Drawing.Size(133, 36);
-            this.guna2ComboBox4.TabIndex = 100;
-            this.guna2ComboBox4.ValueMember = "Drug_Name";
-            // 
-            // guna2ComboBox3
-            // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DisplayMember = "Drug_Name";
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(143, 284);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.Size = new System.Drawing.Size(133, 36);
-            this.guna2ComboBox3.TabIndex = 99;
-            this.guna2ComboBox3.ValueMember = "Drug_Name";
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DisplayMember = "Drug_Name";
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(143, 352);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(133, 36);
-            this.guna2ComboBox2.TabIndex = 98;
-            this.guna2ComboBox2.ValueMember = "Drug_Name";
             // 
             // guna2ComboBox1
             // 
@@ -960,15 +679,6 @@
         private RJButton rjButton1;
         private System.Windows.Forms.Label label20;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox6;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton13;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton14;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton15;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton10;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton11;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton12;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton7;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton8;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton9;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton4;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton5;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton6;
@@ -976,14 +686,8 @@
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox5;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox9;

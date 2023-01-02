@@ -66,3 +66,14 @@ C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.DocView.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.DocView2.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.NurseTab.resources
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\tessdata\configs\config.cfg
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\tessdata\eng.traineddata
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\tessdata\equ.traineddata
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\tessdata\osd.traineddata
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\tessdata\pdf.ttf
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\tessdata\pdf.ttx
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\x64\tesseract.dll
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\x86\Tesseract.dll
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\Patagames.Ocr.dll
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\System.Drawing.Common.dll
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\Patagames.Ocr.xml

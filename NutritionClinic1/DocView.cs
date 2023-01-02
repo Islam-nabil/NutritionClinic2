@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace NutritionClinic1
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd = new SqlCommand();
+        Image img;
         public DocView()
         {
             InitializeComponent();
@@ -758,40 +760,58 @@ namespace NutritionClinic1
                     if(radioButton1.Text.Equals(R.GetValue(13)))
                     {
                         radioButton1.Checked = true;
+                        radioButton2.Checked = false;
+                        radioButton3.Checked = false;
+                        radioButton4.Checked = false;
                     }
                     else if(radioButton2.Text.Equals(R.GetValue(13)))
                     {
                      radioButton2.Checked = true;
+                        radioButton1.Checked = false;
+                        radioButton3.Checked = false;
+                        radioButton4.Checked = false;
                     }
                     else if(radioButton3.Text.Equals(R.GetValue(13)))
                     {
                         radioButton3.Checked= true;
+                        radioButton2.Checked = false;
+                        radioButton1.Checked = false;
+                        radioButton4.Checked = false;
 
                     }
                     else
                     {
                         radioButton4.Checked= true;
+                        radioButton2.Checked = false;
+                        radioButton3.Checked = false;
+                        radioButton1.Checked = false;
                     }
 
                     if (radioButton13.Text.Equals(R.GetValue(15)))
                     {
                         radioButton13.Checked= true;
                         radioButton14.Checked = false;
+                        
                     }
                     else
                     {
-                       radioButton14.Checked= true;
+                        radioButton14.Checked = true;
                         radioButton13.Checked = false;
                     }
+                                  
 
                     if (radioButton12.Text.Equals(R.GetValue(16)))
                     {
                         radioButton12.Checked = true;
+                        radioButton5.Checked = false;
+                        textBox10.Clear();
 
                     }
                     else
                     {
-                        radioButton12.Checked = false;
+                        
+                        
+                       radioButton12.Checked = false;
                         radioButton5.Checked = true;
                         textBox10.Text = R.GetValue(16).ToString();
 
@@ -916,6 +936,21 @@ namespace NutritionClinic1
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cdd = new SqlCommand("SELECT photo FROM Patient ORDER BY Patient_ID ", con);
+            SqlDataReader reader = cdd.ExecuteReader();
+            if (reader.Read())
+            {
+                MemoryStream ms = new MemoryStream((byte[])reader["photo"]);
+                img = Image.FromStream(ms);
+            }
+            reader.Close();
+            con.Close();
+            guna2PictureBox1.Image = img;
         }
 
 

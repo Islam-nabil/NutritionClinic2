@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +28,7 @@ namespace NutritionClinic1
         string p;
         string f;
         string s;
+        string imgloc = "";
         
 
 
@@ -44,8 +47,10 @@ namespace NutritionClinic1
 
             
         {
-            
-
+            byte[] images = null;
+            FileStream stream =new FileStream(imgloc, FileMode.Open, FileAccess.Read);
+            BinaryReader brs = new BinaryReader(stream);
+            images = brs.ReadBytes((int)stream.Length);
             if (radioButton5.Checked == true)
             {
                 f = textBox1.Text;
@@ -118,10 +123,9 @@ namespace NutritionClinic1
 
                 SqlConnection con = new SqlConnection("Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
                 con.Open();
-                SqlCommand cmd = new SqlCommand("insert into Patient(Patient_Name,Patient_Gender,Patient_Birth,Patient_NationalID,Patient_Address,Patient_Height,Patient_Weight, Patient_Chronic1, Patient_Chronic2,Patient_Chronic3,Patient_Chronic4,Patient_Med,Patient_pregnant,Supplements,Smoker,Foodallergies)values('" + TextboxNa.Text + "','" + g + "','" + dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "' ,'" + Nationalid.Text + "','" + Address.Text + "','" + HeightN.Text + "','" + Weightn.Text + "' , '" + n + "','" + n2 + "','" + n3 + "', '" + textBox3.Text + "' ,'" + m + "','" + p + "','" + textBox2.Text + "','" + s + "','" + f + "')", con);
+                SqlCommand que = new SqlCommand("insert into Patient(Patient_Name, Patient_Gender, Patient_Birth, Patient_NationalID, Patient_Address, Patient_Height, Patient_Weight, Patient_Chronic1, Patient_Chronic2, Patient_Chronic3, Patient_Chronic4, photo)values('" + TextboxNa.Text + "', '" + g + "', '" + dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "', '" + Nationalid.Text + "', '" + Address.Text + "', '" + HeightN.Text + "', '" + Weightn.Text + "', '" + n + "', '" + n2 + "', '" + n3 + "', '" + textBox3.Text + "', '" + guna2PictureBox1 + "')", con); cmd.Parameters.Add(new SqlParameter(imgloc, images));
 
-
-                int i = cmd.ExecuteNonQuery();
+                int i = que.ExecuteNonQuery();
                 //cnd.ExecuteNonQuery();
                 if (i != 0)
                 {
@@ -193,6 +197,18 @@ namespace NutritionClinic1
             Application.Restart();
             Environment.Exit(0);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "png Files(*.png)|*.png|jpg files(*.jpg)|*.jpg";
+
+            if(ofd.ShowDialog() == DialogResult.OK )
+            {
+                imgloc = ofd.FileName.ToString();
+                guna2PictureBox1.ImageLocation = imgloc;
+            }
         }
     }
 }
