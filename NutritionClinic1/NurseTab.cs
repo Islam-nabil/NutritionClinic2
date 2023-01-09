@@ -47,10 +47,7 @@ namespace NutritionClinic1
 
             
         {
-            byte[] images = null;
-            FileStream stream =new FileStream(imgloc, FileMode.Open, FileAccess.Read);
-            BinaryReader brs = new BinaryReader(stream);
-            images = brs.ReadBytes((int)stream.Length);
+            
             if (radioButton5.Checked == true)
             {
                 f = textBox1.Text;
@@ -121,23 +118,49 @@ namespace NutritionClinic1
             }
 
 
-                SqlConnection con = new SqlConnection("Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
+            //Replaced Parameters with Value
+            string query = "insert into Patient(Patient_Name,Patient_Gender,Patient_Birth,Patient_NationalID,Patient_Address,Patient_Height,Patient_Weight, Patient_Chronic1, Patient_Chronic2,Patient_Chronic3,Patient_Chronic4,Patient_Med,Patient_pregnant,Supplements,Smoker,Foodallergies)values(@Patient_Name,@Patient_Gender,@Patient_Birth,@Patient_NationalID,@Patient_Address,@Patient_Height,@Patient_Weight, @Patient_Chronic1, @Patient_Chronic2,@Patient_Chronic3,@Patient_Chronic4,@Patient_Med,@Patient_pregnant,@Supplements,@Smoker,@Foodallergies)";
+            SqlCommand cmd = new SqlCommand(query, con);
+
+            //Pass values to Parameters
+            cmd.Parameters.AddWithValue("@Patient_Name", TextboxNa.Text);
+            cmd.Parameters.AddWithValue("@Patient_Gender", g);
+            cmd.Parameters.AddWithValue("@Patient_Birth", dateTimePicker1.Value.Date.ToString("yyyyMMdd"));
+            cmd.Parameters.AddWithValue("@Patient_NationalID", Nationalid.Text);
+            cmd.Parameters.AddWithValue("@Patient_Address", Address.Text);
+            cmd.Parameters.AddWithValue("@Patient_Height", HeightN.Text);
+            cmd.Parameters.AddWithValue("@Patient_Weight", Weightn.Text);
+            cmd.Parameters.AddWithValue("@Patient_Chronic1", n);
+            cmd.Parameters.AddWithValue("@Patient_Chronic2", n2);
+            cmd.Parameters.AddWithValue("@Patient_Chronic3", n3);
+            cmd.Parameters.AddWithValue("@Patient_Chronic4", textBox3.Text);
+            cmd.Parameters.AddWithValue("@Patient_Med", m);
+            cmd.Parameters.AddWithValue("@Patient_pregnant", p);
+            cmd.Parameters.AddWithValue("@Supplements", textBox2.Text);
+            cmd.Parameters.AddWithValue("@Smoker", s);
+            cmd.Parameters.AddWithValue("@Foodallergies", f);
+
+
+
+
+            try
+            {
                 con.Open();
-                SqlCommand que = new SqlCommand("insert into Patient(Patient_Name, Patient_Gender, Patient_Birth, Patient_NationalID, Patient_Address, Patient_Height, Patient_Weight, Patient_Chronic1, Patient_Chronic2, Patient_Chronic3, Patient_Chronic4, photo)values('" + TextboxNa.Text + "', '" + g + "', '" + dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "', '" + Nationalid.Text + "', '" + Address.Text + "', '" + HeightN.Text + "', '" + Weightn.Text + "', '" + n + "', '" + n2 + "', '" + n3 + "', '" + textBox3.Text + "', '" + guna2PictureBox1 + "')", con); cmd.Parameters.Add(new SqlParameter(imgloc, images));
-
-                int i = que.ExecuteNonQuery();
-                //cnd.ExecuteNonQuery();
-                if (i != 0)
-                {
-                    MessageBox.Show("Saved");
-
-                }
-                else
-                {
-                    MessageBox.Show("error");
-                }
-                con.Close();
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Records Inserted Successfully");
             }
+            catch (SqlException exx)
+            {
+                Console.WriteLine("Error Generated. Details: " + exx.ToString());
+            }
+            finally
+            {
+                con.Close();
+                Console.ReadKey();
+            }
+        }
+    
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -199,16 +222,6 @@ namespace NutritionClinic1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "png Files(*.png)|*.png|jpg files(*.jpg)|*.jpg";
-
-            if(ofd.ShowDialog() == DialogResult.OK )
-            {
-                imgloc = ofd.FileName.ToString();
-                guna2PictureBox1.ImageLocation = imgloc;
-            }
-        }
+        
     }
 }

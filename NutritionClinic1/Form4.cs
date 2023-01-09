@@ -63,5 +63,10 @@ namespace NutritionClinic1
             UC_ViewAp uc = new UC_ViewAp();
             addUserControl(uc);
         }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     }

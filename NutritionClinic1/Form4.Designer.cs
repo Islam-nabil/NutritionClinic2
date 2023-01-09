@@ -188,7 +188,7 @@
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageOffset = new System.Drawing.Point(0, -7);
             this.guna2Button2.ImageSize = new System.Drawing.Size(34, 35);
-            this.guna2Button2.Location = new System.Drawing.Point(3, 134);
+            this.guna2Button2.Location = new System.Drawing.Point(1, 134);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(208, 54);
             this.guna2Button2.TabIndex = 2;
@@ -201,15 +201,16 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(212, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(783, 748);
+            this.panelContainer.Size = new System.Drawing.Size(958, 748);
             this.panelContainer.TabIndex = 2;
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(995, 748);
+            this.ClientSize = new System.Drawing.Size(1170, 748);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
