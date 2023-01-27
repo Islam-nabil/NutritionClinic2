@@ -28,7 +28,6 @@ namespace NutritionClinic1
         string p;
         string f;
         string s;
-        string imgloc = "";
         
 
 
