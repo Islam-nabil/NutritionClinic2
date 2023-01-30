@@ -112,6 +112,7 @@
             this.patientTableAdapter = new NutritionClinic1.myclinic1DataSet4TableAdapters.PatientTableAdapter();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet2)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -144,21 +145,22 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tabPage4.Controls.Add(this.label11);
             this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(903, 688);
             this.tabPage4.TabIndex = 5;
-            this.tabPage4.Text = "Appoiments";
+            this.tabPage4.Text = "View Appoiments";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(512, 126);
+            this.dataGridView1.Location = new System.Drawing.Point(391, 106);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(368, 64);
+            this.dataGridView1.Size = new System.Drawing.Size(368, 253);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -1188,6 +1190,15 @@
             this.label10.TabIndex = 228;
             this.label10.Text = "National ID";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(105, 87);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 13);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Appoimnets Today";
+            // 
             // DocView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1203,6 +1214,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet2)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -1302,5 +1314,6 @@
         private System.Windows.Forms.Button btsearch;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
