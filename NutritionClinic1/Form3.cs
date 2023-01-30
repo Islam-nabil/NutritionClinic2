@@ -90,7 +90,7 @@ namespace NutritionClinic1
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             panelcontainer.Controls.Clear();
-            DocView2 frm12 = new DocView2();
+            Form10 frm12 = new Form10();
             frm12.TopLevel = false;
             panelcontainer.Controls.Add(frm12);
             frm12.Show();

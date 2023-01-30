@@ -116,18 +116,19 @@ namespace NutritionClinic1
             {
                 s = radioButton14.Text;
             }
-
+            
 
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Integrated Security=True");
             //Replaced Parameters with Value
-            string query = "insert into Patient(Patient_Name,Patient_Gender,Patient_Birth,Patient_NationalID,Patient_Address,Patient_Height,Patient_Weight, Patient_Chronic1, Patient_Chronic2,Patient_Chronic3,Patient_Chronic4,Patient_Med,Patient_pregnant,Supplements,Smoker,Foodallergies)values(@Patient_Name,@Patient_Gender,@Patient_Birth,@Patient_NationalID,@Patient_Address,@Patient_Height,@Patient_Weight, @Patient_Chronic1, @Patient_Chronic2,@Patient_Chronic3,@Patient_Chronic4,@Patient_Med,@Patient_pregnant,@Supplements,@Smoker,@Foodallergies)";
+            string query = "insert into Patient(Patient_Name,Patient_Gender,Patient_Birth,NID,Patient_Address,Patient_Height,Patient_Weight, Patient_Chronic1, Patient_Chronic2,Patient_Chronic3,Patient_Chronic4,Patient_Med,Patient_pregnant,Supplements,Smoker,Foodallergies)values(@Patient_Name,@Patient_Gender,@Patient_Birth,@NID,@Patient_Address,@Patient_Height,@Patient_Weight, @Patient_Chronic1, @Patient_Chronic2,@Patient_Chronic3,@Patient_Chronic4,@Patient_Med,@Patient_pregnant,@Supplements,@Smoker,@Foodallergies)";
             SqlCommand cmd = new SqlCommand(query, con);
 
             //Pass values to Parameters
             cmd.Parameters.AddWithValue("@Patient_Name", TextboxNa.Text);
             cmd.Parameters.AddWithValue("@Patient_Gender", g);
             cmd.Parameters.AddWithValue("@Patient_Birth", dateTimePicker1.Value.Date.ToString("yyyyMMdd"));
-            cmd.Parameters.AddWithValue("@Patient_NationalID", Nationalid.Text);
+            
+             cmd.Parameters.AddWithValue("@NID", Nationalid.Text);
             cmd.Parameters.AddWithValue("@Patient_Address", Address.Text);
             cmd.Parameters.AddWithValue("@Patient_Height", HeightN.Text);
             cmd.Parameters.AddWithValue("@Patient_Weight", Weightn.Text);
@@ -147,12 +148,14 @@ namespace NutritionClinic1
             try
             {
                 con.Open();
+
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Records Inserted Successfully");
             }
             catch (SqlException exx)
+
             {
-                MessageBox.Show("Error Generated. Details: " + exx.ToString());
+                MessageBox.Show("Error Generated. Details: Check National ID " + exx.ToString());
             }
             
                 con.Close();
@@ -222,6 +225,11 @@ namespace NutritionClinic1
         }
 
         private void TextboxNa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nationalid_TextChanged(object sender, EventArgs e)
         {
 
         }
