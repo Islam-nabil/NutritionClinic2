@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.drug_IDComboBox = new System.Windows.Forms.ComboBox();
             this.drugsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.myclinic1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.myclinic1DataSet = new NutritionClinic1.myclinic1DataSet();
@@ -37,8 +36,6 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.drugsTableAdapter = new NutritionClinic1.myclinic1DataSetTableAdapters.DrugsTableAdapter();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -56,7 +53,7 @@
             this.rjButton1 = new NutritionClinic1.RJButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rjButton2 = new NutritionClinic1.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet)).BeginInit();
@@ -65,18 +62,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // drug_IDComboBox
-            // 
-            this.drug_IDComboBox.DataSource = this.drugsBindingSource;
-            this.drug_IDComboBox.DisplayMember = "Drug_ID";
-            this.drug_IDComboBox.FormattingEnabled = true;
-            this.drug_IDComboBox.Location = new System.Drawing.Point(231, 10);
-            this.drug_IDComboBox.Name = "drug_IDComboBox";
-            this.drug_IDComboBox.Size = new System.Drawing.Size(121, 21);
-            this.drug_IDComboBox.TabIndex = 41;
-            this.drug_IDComboBox.ValueMember = "Drug_Name";
-            this.drug_IDComboBox.SelectedIndexChanged += new System.EventHandler(this.drug_IDComboBox_SelectedIndexChanged);
             // 
             // drugsBindingSource
             // 
@@ -150,35 +135,11 @@
             this.comboBox1.TabIndex = 27;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(153, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 18);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "ID:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(13, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 18);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Name:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Info;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Location = new System.Drawing.Point(475, 252);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 255);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(474, 136);
             this.richTextBox1.TabIndex = 22;
@@ -236,7 +197,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label11.Location = new System.Drawing.Point(9, 224);
+            this.label11.Location = new System.Drawing.Point(9, 135);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 18);
             this.label11.TabIndex = 29;
@@ -272,7 +233,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(685, 211);
+            this.label4.Location = new System.Drawing.Point(175, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 18);
             this.label4.TabIndex = 50;
@@ -299,8 +260,8 @@
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Gray;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Gray;
+            this.rjButton1.BackColor = System.Drawing.Color.Orange;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Orange;
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton1.BorderRadius = 20;
             this.rjButton1.BorderSize = 0;
@@ -308,11 +269,11 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.Location = new System.Drawing.Point(201, 410);
+            this.rjButton1.Location = new System.Drawing.Point(83, 407);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(111, 34);
             this.rjButton1.TabIndex = 43;
-            this.rjButton1.Text = "Show Drugs";
+            this.rjButton1.Text = "Save Drugs";
             this.rjButton1.TextColor = System.Drawing.Color.Black;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
@@ -323,6 +284,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(134, 20);
             this.textBox1.TabIndex = 51;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox2
             // 
@@ -337,12 +299,25 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 52;
             // 
-            // textBox2
+            // rjButton2
             // 
-            this.textBox2.Location = new System.Drawing.Point(131, 222);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 53;
+            this.rjButton2.BackColor = System.Drawing.Color.Orange;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Orange;
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 20;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.ForeColor = System.Drawing.Color.Black;
+            this.rjButton2.Location = new System.Drawing.Point(246, 397);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(111, 55);
+            this.rjButton2.TabIndex = 53;
+            this.rjButton2.Text = "Save Prescription";
+            this.rjButton2.TextColor = System.Drawing.Color.Black;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // Form10
             // 
@@ -350,7 +325,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(979, 697);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
@@ -359,7 +334,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.rjButton1);
-            this.Controls.Add(this.drug_IDComboBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -367,10 +341,9 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form10";
             this.Text = "Form10";
             this.Load += new System.EventHandler(this.Form10_Load);
@@ -387,13 +360,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox drug_IDComboBox;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.BindingSource myclinic1DataSetBindingSource;
         private myclinic1DataSet myclinic1DataSet;
@@ -414,6 +384,6 @@
         private RJButton rjButton1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private RJButton rjButton2;
     }
 }

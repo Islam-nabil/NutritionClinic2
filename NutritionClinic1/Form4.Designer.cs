@@ -44,7 +44,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel1.Controls.Add(this.guna2Button5);
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.label2);
@@ -67,16 +67,16 @@
             this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.CustomBorderColor = System.Drawing.Color.Indigo;
             this.guna2Button5.Image = global::NutritionClinic1.Properties.Resources.log_out;
             this.guna2Button5.ImageOffset = new System.Drawing.Point(0, -2);
             this.guna2Button5.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button5.Location = new System.Drawing.Point(4, 368);
+            this.guna2Button5.Location = new System.Drawing.Point(-2, 432);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(208, 54);
+            this.guna2Button5.Size = new System.Drawing.Size(214, 54);
             this.guna2Button5.TabIndex = 3;
             this.guna2Button5.Text = "Sign Out";
             // 
@@ -89,16 +89,16 @@
             this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.CustomBorderColor = System.Drawing.Color.Indigo;
             this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
             this.guna2Button4.ImageOffset = new System.Drawing.Point(0, -7);
             this.guna2Button4.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button4.Location = new System.Drawing.Point(3, 308);
+            this.guna2Button4.Location = new System.Drawing.Point(-2, 372);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(208, 54);
+            this.guna2Button4.Size = new System.Drawing.Size(214, 54);
             this.guna2Button4.TabIndex = 2;
             this.guna2Button4.Text = "Medical Record ";
             // 
@@ -116,7 +116,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(68, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -134,16 +134,16 @@
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.CustomBorderColor = System.Drawing.Color.Indigo;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageOffset = new System.Drawing.Point(0, -7);
             this.guna2Button3.ImageSize = new System.Drawing.Size(36, 36);
-            this.guna2Button3.Location = new System.Drawing.Point(3, 248);
+            this.guna2Button3.Location = new System.Drawing.Point(-2, 312);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(208, 54);
+            this.guna2Button3.Size = new System.Drawing.Size(213, 54);
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "View Appointments";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -157,14 +157,14 @@
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.CustomBorderColor = System.Drawing.Color.Indigo;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageOffset = new System.Drawing.Point(0, -7);
             this.guna2Button1.ImageSize = new System.Drawing.Size(34, 34);
-            this.guna2Button1.Location = new System.Drawing.Point(-2, 194);
+            this.guna2Button1.Location = new System.Drawing.Point(-2, 252);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(214, 54);
             this.guna2Button1.TabIndex = 2;
@@ -181,16 +181,16 @@
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(3)))), ((int)(((byte)(117)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.DarkSlateGray;
             this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.CustomBorderColor = System.Drawing.Color.Indigo;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageOffset = new System.Drawing.Point(0, -7);
             this.guna2Button2.ImageSize = new System.Drawing.Size(34, 35);
-            this.guna2Button2.Location = new System.Drawing.Point(1, 134);
+            this.guna2Button2.Location = new System.Drawing.Point(1, 192);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(208, 54);
+            this.guna2Button2.Size = new System.Drawing.Size(211, 54);
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "Add Patient";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);

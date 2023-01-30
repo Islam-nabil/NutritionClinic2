@@ -52,6 +52,7 @@ namespace NutritionClinic1
             SqlCommand npres = new SqlCommand("insert into prescription(PNID, drugAmount,active, perDate) values(@PNID, 0, @active, @perDate);", con);
             npres.Parameters.Add("@PNID", NID);
             npres.Parameters.Add("@active", 1);
+
             npres.Parameters.Add("@perDate", DateTime.Now.Date.ToString("M/d/yyyy"));
             npres.ExecuteNonQuery();
             con.Close();
@@ -124,7 +125,7 @@ namespace NutritionClinic1
                 drugNum.ExecuteNonQuery();
                 MessageBox.Show("Drug Added Successfully.");
                 textBox1.Text = "";
-                textBox2.Text = "";
+               
                 Dose.Value = 0;
                 
 
@@ -203,6 +204,16 @@ namespace NutritionClinic1
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

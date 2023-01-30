@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace NutritionClinic1
@@ -143,6 +144,16 @@ namespace NutritionClinic1
         private void uC_Per1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            panelcontainer.Controls.Clear();
+            SqlCommand logout = new SqlCommand("UPDATE patient set active = 0 where active =1;", con);
+            
+            logout.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

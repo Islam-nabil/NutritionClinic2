@@ -13,6 +13,8 @@ namespace NutritionClinic1
 {
     public partial class Form1 : Form
     {
+        SqlCommand cmd = new SqlCommand();
+        SqlDataAdapter da = new SqlDataAdapter();
         public Form1()
         {
             InitializeComponent();
@@ -37,42 +39,37 @@ namespace NutritionClinic1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            String username, user_password;
-            username = textBox2.Text;
-            user_password = textBox1.Text;
-            
-            try
+            con.Open();
+            string query = "SELECT * FROM Login WHERE Username='" + textBox1.Text + "' and Password = '" + textBox2.Text + "'";
+            cmd = new SqlCommand(query, con);
+            da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            int i = ds.Tables[0].Rows.Count;
+            if (i == 1)
             {
-                String querry = "SELECT * FROM Doctors WHERE Doc_Name = '"+textBox2.Text+"' AND Doc_Password = '"+textBox1.Text+"'";
-                SqlDataAdapter sda = new SqlDataAdapter(querry, con);
-                DataTable dtable = new DataTable();
-                sda.Fill(dtable);
-                if (dtable.Rows.Count > 0)
+                
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                if (dr[5].ToString() == "Doctor")
                 {
-                    username = textBox2.Text;
-                    user_password =  textBox1.Text;
-                    Form3 form3 = new Form3();
-                    form3.Show();
+                    Form3 dc = new Form3();
+                    dc.Show();
+                    this.Hide();
+                }
+                else if (dr[5].ToString() == "Nurse")
+                {
+                    Form4 ns = new Form4();
+                    ns.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Credentials","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBox2.Clear();
-                    textBox1.Clear();
-
-                    textBox2.Focus();
+                    MessageBox.Show("Please Check Your Username Or Password", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                
             }
-            catch
-            {
-                MessageBox.Show("Error");
-            }
-            finally
-            { 
-                con.Close();
-            }
+            con.Close();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
