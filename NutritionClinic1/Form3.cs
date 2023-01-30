@@ -98,14 +98,12 @@ namespace NutritionClinic1
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            UC_Appo uc = new UC_Appo();
-            addUserControl(uc);
+           
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-           UC_Inbody uc = new UC_Inbody();  
-            addUserControl(uc);
+          
         }
 
         private void button8_Click_1(object sender, EventArgs e)

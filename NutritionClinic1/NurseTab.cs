@@ -28,6 +28,7 @@ namespace NutritionClinic1
         string p;
         string f;
         string s;
+       
         
 
 
@@ -147,17 +148,16 @@ namespace NutritionClinic1
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                Console.WriteLine("Records Inserted Successfully");
+                MessageBox.Show("Records Inserted Successfully");
             }
             catch (SqlException exx)
             {
-                Console.WriteLine("Error Generated. Details: " + exx.ToString());
+                MessageBox.Show("Error Generated. Details: " + exx.ToString());
             }
-            finally
-            {
+            
                 con.Close();
-                Console.ReadKey();
-            }
+                
+            
         }
     
 
@@ -221,6 +221,9 @@ namespace NutritionClinic1
 
         }
 
-        
+        private void TextboxNa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

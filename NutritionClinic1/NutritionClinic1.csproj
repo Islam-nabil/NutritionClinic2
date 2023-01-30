@@ -93,6 +93,12 @@
     <Compile Include="Form10.Designer.cs">
       <DependentUpon>Form10.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>myclinic1DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="myclinic1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myclinic1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myclinic1DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myclinic1DataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NurseTab.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,46 +184,6 @@
     <Compile Include="RUButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserControl\UC_Addresrev.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UC_Addresrev.Designer.cs">
-      <DependentUpon>UC_Addresrev.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\UC_ViewAp.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UC_ViewAp.Designer.cs">
-      <DependentUpon>UC_ViewAp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\UC_Addpatinet.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UC_Addpatinet.Designer.cs">
-      <DependentUpon>UC_Addpatinet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\UC_Inbody.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UC_Inbody.Designer.cs">
-      <DependentUpon>UC_Inbody.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\UC_Appo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UC_Appo.Designer.cs">
-      <DependentUpon>UC_Appo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\UC_Diet.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UC_Diet.Designer.cs">
-      <DependentUpon>UC_Diet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\UC_View.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\UC_View.Designer.cs" />
     <EmbeddedResource Include="DocView.resx">
       <DependentUpon>DocView.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form10.resx">
       <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -257,25 +236,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControl\UC_ViewAp.resx">
-      <DependentUpon>UC_ViewAp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_Addresrev.resx">
-      <DependentUpon>UC_Addresrev.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_Addpatinet.resx">
-      <DependentUpon>UC_Addpatinet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_Inbody.resx">
-      <DependentUpon>UC_Inbody.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_Appo.resx">
-      <DependentUpon>UC_Appo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_Diet.resx">
-      <DependentUpon>UC_Diet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_View.resx" />
     <None Include="myclinic1DataSet.xsc">
       <DependentUpon>myclinic1DataSet.xsd</DependentUpon>
     </None>
@@ -308,6 +268,28 @@
     </None>
     <None Include="myclinic1DataSet2.xss">
       <DependentUpon>myclinic1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="myclinic1DataSet3.xsc">
+      <DependentUpon>myclinic1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="myclinic1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myclinic1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myclinic1DataSet3.xss">
+      <DependentUpon>myclinic1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="myclinic1DataSet4.xsc">
+      <DependentUpon>myclinic1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="myclinic1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myclinic1DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myclinic1DataSet4.xss">
+      <DependentUpon>myclinic1DataSet4.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -45,8 +45,7 @@ namespace NutritionClinic1
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            UC_Addresrev uc = new UC_Addresrev();
-            addUserControl(uc);
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -60,8 +59,7 @@ namespace NutritionClinic1
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            UC_ViewAp uc = new UC_ViewAp();
-            addUserControl(uc);
+           
         }
 
         private void panelContainer_Paint(object sender, PaintEventArgs e)

@@ -31,27 +31,28 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.drugsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.myclinic1DataSet1 = new NutritionClinic1.myclinic1DataSet1();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.drugsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.myclinic1DataSet1 = new NutritionClinic1.myclinic1DataSet1();
             this.panelcontainer = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.myclinic1DataSet = new NutritionClinic1.myclinic1DataSet();
             this.myclinic1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.myclinic1DataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.drugsTableAdapter = new NutritionClinic1.myclinic1DataSet1TableAdapters.DrugsTableAdapter();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelcontainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource)).BeginInit();
@@ -72,16 +73,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 736);
             this.panel1.TabIndex = 17;
-            // 
-            // drugsBindingSource
-            // 
-            this.drugsBindingSource.DataMember = "Drugs";
-            this.drugsBindingSource.DataSource = this.myclinic1DataSet1;
-            // 
-            // myclinic1DataSet1
-            // 
-            this.myclinic1DataSet1.DataSetName = "myclinic1DataSet1";
-            this.myclinic1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // guna2Button6
             // 
@@ -192,6 +183,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // drugsBindingSource
+            // 
+            this.drugsBindingSource.DataMember = "Drugs";
+            this.drugsBindingSource.DataSource = this.myclinic1DataSet1;
+            // 
+            // myclinic1DataSet1
+            // 
+            this.myclinic1DataSet1.DataSetName = "myclinic1DataSet1";
+            this.myclinic1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // panelcontainer
             // 
             this.panelcontainer.BackColor = System.Drawing.SystemColors.Info;
@@ -235,12 +236,6 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.panel1;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
             // myclinic1DataSet
             // 
             this.myclinic1DataSet.DataSetName = "myclinic1DataSet";
@@ -260,10 +255,23 @@
             // 
             this.drugsTableAdapter.ClearBeforeFill = true;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.panel1;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1141, 736);
             this.Controls.Add(this.panelcontainer);
             this.Controls.Add(this.panel1);
@@ -273,9 +281,9 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.drugsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelcontainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myclinic1DataSetBindingSource)).EndInit();
@@ -295,7 +303,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private myclinic1DataSet myclinic1DataSet;
         private System.Windows.Forms.BindingSource myclinic1DataSetBindingSource;
@@ -303,5 +310,7 @@
         private myclinic1DataSet1 myclinic1DataSet1;
         private System.Windows.Forms.BindingSource drugsBindingSource;
         private myclinic1DataSet1TableAdapters.DrugsTableAdapter drugsTableAdapter;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
     }
 }

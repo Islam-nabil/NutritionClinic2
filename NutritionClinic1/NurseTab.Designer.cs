@@ -86,6 +86,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -131,6 +132,7 @@
             this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.rjButton2);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
@@ -665,6 +667,7 @@
             this.TextboxNa.Name = "TextboxNa";
             this.TextboxNa.Size = new System.Drawing.Size(156, 26);
             this.TextboxNa.TabIndex = 18;
+            this.TextboxNa.TextChanged += new System.EventHandler(this.TextboxNa_TextChanged);
             // 
             // label10
             // 
@@ -771,6 +774,16 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Full Name";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "wagbt byd we bastrma"});
+            this.comboBox1.Location = new System.Drawing.Point(608, 182);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.TabIndex = 210;
+            // 
             // NurseTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -857,5 +870,6 @@
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.GroupBox groupBox5;
         private RJButton rjButton2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

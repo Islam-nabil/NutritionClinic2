@@ -26,10 +26,18 @@ namespace NutritionClinic1
 
         private void DocView_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'myclinic1DataSet4.Patient' table. You can move, or remove it, as needed.
+            this.patientTableAdapter.Fill(this.myclinic1DataSet4.Patient);
             // TODO: This line of code loads data into the 'myclinic1DataSet2.Drugs' table. You can move, or remove it, as needed.
             //this.drugsTableAdapter.Fill(this.myclinic1DataSet2.Drugs);
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT patient_Name,NId FROM Patient", con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Patient");
+            dataGridView1.DataSource = ds.Tables["Patient"].DefaultView;
+            con.Close();
 
-            try
+           /* try
             {
                 comboBox1.Items.Clear();
                 con.Open();
@@ -51,7 +59,7 @@ namespace NutritionClinic1
             comboBox1.ResetText();
             textBox1.Clear();
             textBox3.Clear();
-            textBox2.Clear();
+            //textBox2.Clear();
             textBox4.Clear();
             textBox8.Clear();
 
@@ -75,11 +83,12 @@ namespace NutritionClinic1
                 MessageBox.Show("Error" + ex);
             }
             comboBox4.ResetText();
-            textBox6.Clear();
+            textBox6.Clear();*/
 
 
 
         }
+
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
@@ -601,13 +610,161 @@ namespace NutritionClinic1
 
         }
 
+        private void btsearch_Click(object sender, EventArgs e)
+        {
+
+            string f, d, p, m;
+            f = "Heart diseases";
+            d = "High Blood Pressure";
+            p = "Diabetes";
+
+            try
+            { 
+            con.Open();
+
+            SqlCommand activ = new SqlCommand("UPDATE patient set active = 1 where NID = @NID;", con);
+            activ.Parameters.Add("@NID", long.Parse(textBox11.Text));
+            activ.ExecuteNonQuery();
+            textBox11.Text = "";
+            SqlCommand c = new SqlCommand("SELECT * from patient where active = 1;", con);
+            SqlDataReader s = c.ExecuteReader();
+            while (s.Read())
+
+            {
+                    textBox2.Text = s["NID"].ToString();
+                textBox1.Text = s["patient_Name"].ToString();
+                textBox3.Text = s["patient_Gender"].ToString();
+                // textBox2.Text = s["patient_Name"].ToString();
+                dateTimePicker1.Text = s["Patient_Birth"].ToString();
+                textBox4.Text = s["patient_Weight"].ToString();
+                textBox8.Text = s["patient_Height"].ToString();
+                    textBox6.Text = s["patient_Name"].ToString();
+                    textBox9.Text = s["Supplements"].ToString();
+                    if (f.Equals(s["Patient_chronic1"].ToString()))
+                    {
+                        checkBox16.Checked = true;
+                    }
+                    else
+                    {
+                        checkBox16.Checked = false;
+                    }
+                    if (d.Equals(s["Patient_chronic2"].ToString()))
+                    {
+                        checkBox13.Checked = true;
+                    }
+                    else
+                    {
+                        checkBox13.Checked = false;
+                    }
+                    if (p.Equals(s["Patient_chronic3"].ToString()))
+                    {
+                        checkBox11.Checked = true;
+                    }
+                    else
+                    {
+                        checkBox11.Checked = false;
+                    }
+                    textBox5.Text = s["Patient_chronic4"].ToString();
+
+                    if (radioButton7.Text.Equals(s["Patient_Med"]))
+                    {
+                        radioButton7.Checked = true;
+                        textBox7.Clear();
+
+                    }
+                    else
+                    {
+                        radioButton7.Checked = false;
+                        radioButton6.Checked = true;
+                        textBox7.Text = s["Patient_Med"].ToString();
+
+                    }
+
+                    if (radioButton1.Text.Equals(s["Patient_pregnant"]))
+                    {
+                        radioButton1.Checked = true;
+                        radioButton2.Checked = false;
+                        radioButton3.Checked = false;
+                        radioButton4.Checked = false;
+                    }
+                    else if (radioButton2.Text.Equals(s["Patient_pregnant"]))
+                    {
+                        radioButton2.Checked = true;
+                        radioButton1.Checked = false;
+                        radioButton3.Checked = false;
+                        radioButton4.Checked = false;
+                    }
+                    else if (radioButton3.Text.Equals(s["Patient_pregnant"]))
+                    {
+                        radioButton3.Checked = true;
+                        radioButton2.Checked = false;
+                        radioButton1.Checked = false;
+                        radioButton4.Checked = false;
+
+                    }
+                    else
+                    {
+                        radioButton4.Checked = true;
+                        radioButton2.Checked = false;
+                        radioButton3.Checked = false;
+                        radioButton1.Checked = false;
+                    }
+
+                    if (radioButton13.Text.Equals(s["Smoker"].ToString()))
+                    {
+                        radioButton13.Checked = true;
+                        radioButton14.Checked = false;
+
+                    }
+                    else
+                    {
+                        radioButton14.Checked = true;
+                        radioButton13.Checked = false;
+                    }
+
+
+                    if (radioButton12.Text.Equals(s["Foodallergies"]))
+                    {
+                        radioButton12.Checked = true;
+                        radioButton5.Checked = false;
+                        textBox10.Clear();
+
+                    }
+                    else
+                    {
+
+
+                        radioButton12.Checked = false;
+                        radioButton5.Checked = true;
+                        textBox10.Text = s["Foodallergies"].ToString();
+
+                    }
+
+
+
+
+
+                }
+            con.Close();
+        }
+            catch (Exception ex)
+            {
+                MessageBox.Show("National Id Is not avaliable try again" + ex);
+            }
+
+
+
+
+
+        }
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
+           /* try
             {
                 String si = comboBox1.SelectedItem.ToString();
                 con.Open();
-                String query = "SELECT * FROM Patient WHERE Patient_ID = '" + si + "'";
+                String query = "SELECT * FROM Patient WHERE active =1'";
                 cmd = new SqlCommand(query, con);
                 SqlDataReader R = cmd.ExecuteReader();
 
@@ -630,7 +787,7 @@ namespace NutritionClinic1
             catch (Exception ex)
             {
                 MessageBox.Show("Error" + ex);
-            }
+            }*/
         }
 
         private void label8_Click_1(object sender, EventArgs e)
@@ -698,7 +855,8 @@ namespace NutritionClinic1
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string f, d, p , m;
+            //imoppp
+            /*string f, d, p , m;
             f = "Heart diseases";
             d = "High Blood Pressure";
             p = "Diabetes";
@@ -825,7 +983,7 @@ namespace NutritionClinic1
             catch (Exception ex)
             {
                 MessageBox.Show("Error" + ex);
-            }
+            }*/
         }
 
         private void label13_Click_1(object sender, EventArgs e)
@@ -940,19 +1098,35 @@ namespace NutritionClinic1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand cdd = new SqlCommand("SELECT photo FROM Patient ORDER BY Patient_ID ", con);
-            SqlDataReader reader = cdd.ExecuteReader();
-            if (reader.Read())
-            {
-                MemoryStream ms = new MemoryStream((byte[])reader["photo"]);
-                img = Image.FromStream(ms);
-            }
-            reader.Close();
-            con.Close();
-            guna2PictureBox1.Image = img;
+            
         }
 
+        private void tabPage3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox11_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+       
 
 
         /*private void rjButton1_Click_1(object sender, EventArgs e)

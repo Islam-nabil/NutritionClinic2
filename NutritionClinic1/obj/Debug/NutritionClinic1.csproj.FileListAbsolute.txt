@@ -46,13 +46,6 @@ C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.csproj.CopyComplete
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.exe
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.pdb
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Diet.resources
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Appo.resources
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Inbody.resources
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UserControl.UC_View.resources
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_ViewAp.resources
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Addresrev.resources
-C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.UC_Addpatinet.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form5.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form6.resources
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form7.resources
@@ -77,3 +70,4 @@ C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\Patagames.Ocr.dll
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\System.Drawing.Common.dll
 C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\bin\Debug\Patagames.Ocr.xml
+C:\Users\OS\source\repos\NutritionClinic2\NutritionClinic2\NutritionClinic1\obj\Debug\NutritionClinic1.Form11.resources
