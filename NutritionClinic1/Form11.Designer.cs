@@ -36,6 +36,7 @@
             this.lblNationalID = new System.Windows.Forms.Label();
             this.lblDateOfAppointment = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -59,7 +60,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.lblTime.ForeColor = System.Drawing.Color.Purple;
             this.lblTime.Location = new System.Drawing.Point(81, 144);
             this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTime.Name = "lblTime";
@@ -83,6 +84,7 @@
             this.BtnSave.Text = "Save";
             this.BtnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.BtnSave.UseVisualStyleBackColor = false;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // TxtPatientName
             // 
@@ -96,7 +98,7 @@
             // 
             this.lblNationalID.AutoSize = true;
             this.lblNationalID.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.lblNationalID.ForeColor = System.Drawing.Color.Purple;
             this.lblNationalID.Location = new System.Drawing.Point(81, 99);
             this.lblNationalID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNationalID.Name = "lblNationalID";
@@ -108,7 +110,7 @@
             // 
             this.lblDateOfAppointment.AutoSize = true;
             this.lblDateOfAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateOfAppointment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.lblDateOfAppointment.ForeColor = System.Drawing.Color.Purple;
             this.lblDateOfAppointment.Location = new System.Drawing.Point(81, 189);
             this.lblDateOfAppointment.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDateOfAppointment.Name = "lblDateOfAppointment";
@@ -120,7 +122,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(179)))), ((int)(((byte)(68)))));
+            this.lblName.ForeColor = System.Drawing.Color.Purple;
             this.lblName.Location = new System.Drawing.Point(81, 54);
             this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
@@ -128,11 +130,19 @@
             this.lblName.TabIndex = 39;
             this.lblName.Text = "Name: ";
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(227, 189);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 47;
+            // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblTime);
@@ -159,5 +169,6 @@
         private System.Windows.Forms.Label lblNationalID;
         private System.Windows.Forms.Label lblDateOfAppointment;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
