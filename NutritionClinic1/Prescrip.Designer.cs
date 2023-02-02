@@ -1,6 +1,6 @@
 ﻿namespace NutritionClinic1
 {
-    partial class Form10
+    partial class Prescrip
     {
         /// <summary>
         /// Required designer variable.

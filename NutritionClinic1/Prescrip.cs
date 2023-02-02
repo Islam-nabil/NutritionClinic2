@@ -15,7 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace NutritionClinic1
 {
-    public partial class Form10 : Form
+    public partial class Prescrip : Form
 
     {
         
@@ -25,7 +25,7 @@ namespace NutritionClinic1
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Trusted_Connection=True;");
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd = new SqlCommand();
-        public Form10()
+        public Prescrip()
         {
             InitializeComponent();
         }

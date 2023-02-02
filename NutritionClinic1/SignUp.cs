@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace NutritionClinic1
 {
-    public partial class Form2 : Form
+    public partial class SignUp : Form
     {
         SqlCommand cmd = new SqlCommand();
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Trusted_Connection=True;");
 
-        public Form2()
+        public SignUp()
         {
             InitializeComponent();
         }

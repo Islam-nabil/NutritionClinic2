@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace NutritionClinic1
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace NutritionClinic1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
+            SignUp f2 = new SignUp();
             f2.ShowDialog();
         }
 
@@ -59,7 +59,7 @@ namespace NutritionClinic1
                 }
                 else if (dr[5].ToString() == "Nurse")
                 {
-                    Form4 ns = new Form4();
+                    NursePanel ns = new NursePanel();
                     ns.Show();
                     this.Hide();
                 }
