@@ -1,6 +1,6 @@
 ﻿namespace NutritionClinic1
 {
-    partial class Form11
+    partial class Reservation
     {
         /// <summary>
         /// Required designer variable.

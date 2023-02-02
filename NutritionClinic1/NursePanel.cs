@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NutritionClinic1
 {
-    public partial class Form4 : Form
+    public partial class NursePanel : Form
     {
-        public Form4()
+        public NursePanel()
         {
             InitializeComponent();
             panelContainer.Controls.Clear();
@@ -69,7 +69,7 @@ namespace NutritionClinic1
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            Form1 Back_6 = new Form1();
+            Login Back_6 = new Login();
             Back_6.Show();
             Visible = false;
         }

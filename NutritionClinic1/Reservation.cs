@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace NutritionClinic1
 {
-    public partial class Form11 : Form
+    public partial class Reservation : Form
     {
         Button button = new Button();
         Button button1 = new Button();
@@ -20,7 +20,7 @@ namespace NutritionClinic1
 
         SqlConnection con = new SqlConnection(@"Data Source = DESKTOP - TPC7M5O; Initial Catalog = myclinic1; Integrated Security = True;");
 
-        public Form11()
+        public Reservation()
         {
             InitializeComponent();
         }

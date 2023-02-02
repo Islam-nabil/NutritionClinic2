@@ -13,11 +13,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace NutritionClinic1
 {
-    public partial class Form3 : Form
+    public partial class Docpanel : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-TPC7M5O;Initial Catalog=myclinic1;Trusted_Connection=True;");
 
-        public Form3()
+        public Docpanel()
         {
             InitializeComponent();
             panelcontainer.Controls.Clear();
@@ -91,7 +91,7 @@ namespace NutritionClinic1
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             panelcontainer.Controls.Clear();
-            Form10 frm12 = new Form10();
+            Prescrip frm12 = new Prescrip();
             frm12.TopLevel = false;
             panelcontainer.Controls.Add(frm12);
             frm12.Show();
@@ -119,7 +119,7 @@ namespace NutritionClinic1
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            Form1 Back_6 = new Form1();
+            Login Back_6 = new Login();
             Back_6.Show();
             Visible = false;
         }
@@ -127,7 +127,7 @@ namespace NutritionClinic1
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             panelcontainer.Controls.Clear();
-            Form10 frm10 = new Form10();
+            Prescrip frm10 = new Prescrip();
             frm10.TopLevel = false;
             panelcontainer.Controls.Add(frm10);
             frm10.Show();
