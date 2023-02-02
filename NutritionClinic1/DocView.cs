@@ -31,7 +31,7 @@ namespace NutritionClinic1
             // TODO: This line of code loads data into the 'myclinic1DataSet2.Drugs' table. You can move, or remove it, as needed.
             //this.drugsTableAdapter.Fill(this.myclinic1DataSet2.Drugs);
             con.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT patient_Name,NId FROM Patient", con);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT patient_Name,NId,aptdate FROM Patient order by aptdate" , con);
             DataSet ds = new DataSet();
             da.Fill(ds, "Patient");
             dataGridView1.DataSource = ds.Tables["Patient"].DefaultView;
